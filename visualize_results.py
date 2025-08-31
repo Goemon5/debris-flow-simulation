@@ -9,6 +9,7 @@ import os
 
 def read_openfoam_field(filepath, field_type='scalar'):
     """OpenFOAMフィールドファイルを読み込む"""
+
     with open(filepath, 'r') as f:
         content = f.read()
     

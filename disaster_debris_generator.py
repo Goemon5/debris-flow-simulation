@@ -389,9 +389,11 @@ class DisasterDebrisGenerator:
         
         # 床スラブ（最初に配置して基礎層を作る）
         print(f"\n床スラブを配置中...")
+        # 計算領域の中央付近に瓦礫を生成 (中心: 7.5, 7.5)
+        center_x, center_y = 7.5, 7.5
         for i in range(NUM_FLOOR_SLABS):
-            x = random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
-            y = random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
+            x = center_x + random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
+            y = center_y + random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
             z = random.uniform(SPAWN_HEIGHT_MIN, SPAWN_HEIGHT_MIN + 2.0)
             
             debris = self.create_floor_slab((x, y, z))
@@ -402,8 +404,8 @@ class DisasterDebrisGenerator:
         # 柱（構造材として重要）
         print(f"\n柱を配置中...")
         for i in range(NUM_COLUMNS):
-            x = random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
-            y = random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
+            x = center_x + random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
+            y = center_y + random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
             z = random.uniform(SPAWN_HEIGHT_MIN, SPAWN_HEIGHT_MAX)
             
             debris = self.create_column((x, y, z))
@@ -414,8 +416,8 @@ class DisasterDebrisGenerator:
         # 梁
         print(f"\n梁を配置中...")
         for i in range(NUM_BEAMS):
-            x = random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
-            y = random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
+            x = center_x + random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
+            y = center_y + random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
             z = random.uniform(SPAWN_HEIGHT_MIN + 1.0, SPAWN_HEIGHT_MAX)
             
             debris = self.create_beam((x, y, z))
@@ -426,8 +428,8 @@ class DisasterDebrisGenerator:
         # 壁片
         print(f"\n壁片を配置中...")
         for i in range(NUM_WALL_FRAGMENTS):
-            x = random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
-            y = random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
+            x = center_x + random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
+            y = center_y + random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
             z = random.uniform(SPAWN_HEIGHT_MIN, SPAWN_HEIGHT_MAX)
             
             debris = self.create_wall_fragment((x, y, z))
@@ -438,8 +440,8 @@ class DisasterDebrisGenerator:
         # 小瓦礫
         print(f"\n小瓦礫を配置中...")
         for i in range(NUM_SMALL_DEBRIS):
-            x = random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
-            y = random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
+            x = center_x + random.uniform(-COLLAPSE_AREA_SIZE[0]/2, COLLAPSE_AREA_SIZE[0]/2)
+            y = center_y + random.uniform(-COLLAPSE_AREA_SIZE[1]/2, COLLAPSE_AREA_SIZE[1]/2)
             z = random.uniform(SPAWN_HEIGHT_MIN, SPAWN_HEIGHT_MAX + 2.0)
             
             debris = self.create_small_debris((x, y, z))
