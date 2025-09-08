@@ -1,0 +1,3055 @@
+[0;36m[13:36:15] Starting: pattern_13_center[0m
+[0;36m[13:36:15] Running simulation: pattern_13_center[0m
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  10
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 10-c4cf895ad8fa
+Exec   : scalarTransportFoam
+Date   : Sep 08 2025
+Time   : 04:36:17
+Host   : "ea62a0c6dfb0"
+PID    : 295
+I/O    : uncollated
+Case   : /work/simulation_results_90cases/pattern_13_center
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: No convergence criteria found
+
+Reading field T
+
+Reading field U
+
+Reading physicalProperties
+
+Reading diffusivity DT
+
+Reading/calculating face flux field phi
+
+--> FOAM Warning : Creating fvModels from "system/fvOptions" rather than constant/fvModels
+Selecting finite volume model type semiImplicitSource
+    Name: scent_source_center
+    - selecting cells using points
+    - selected 1 cell(s) with volume 0.0154509
+--> FOAM Warning : Creating fvConstraints from "system/fvOptions"
+
+No fvConstraints present
+
+Calculating scalar transport
+
+Courant Number mean: 0.00149787 max: 0.0189424
+Time = 0.005s
+
+smoothSolver:  Solving for T, Initial residual = 1, Final residual = 7.33073e-07, No Iterations 1
+Time = 0.01s
+
+smoothSolver:  Solving for T, Initial residual = 0.185581, Final residual = 1.35892e-07, No Iterations 1
+Time = 0.015s
+
+smoothSolver:  Solving for T, Initial residual = 0.10228, Final residual = 7.48108e-08, No Iterations 1
+Time = 0.02s
+
+smoothSolver:  Solving for T, Initial residual = 0.0705935, Final residual = 5.15762e-08, No Iterations 1
+Time = 0.025s
+
+smoothSolver:  Solving for T, Initial residual = 0.0538963, Final residual = 3.93331e-08, No Iterations 1
+Time = 0.03s
+
+smoothSolver:  Solving for T, Initial residual = 0.043587, Final residual = 3.17739e-08, No Iterations 1
+Time = 0.035s
+
+smoothSolver:  Solving for T, Initial residual = 0.0365884, Final residual = 2.66424e-08, No Iterations 1
+Time = 0.04s
+
+smoothSolver:  Solving for T, Initial residual = 0.0315264, Final residual = 2.2931e-08, No Iterations 1
+Time = 0.045s
+
+smoothSolver:  Solving for T, Initial residual = 0.0276949, Final residual = 2.01217e-08, No Iterations 1
+Time = 0.05s
+
+smoothSolver:  Solving for T, Initial residual = 0.0246938, Final residual = 1.79214e-08, No Iterations 1
+Time = 0.055s
+
+smoothSolver:  Solving for T, Initial residual = 0.0222796, Final residual = 1.61514e-08, No Iterations 1
+Time = 0.06s
+
+smoothSolver:  Solving for T, Initial residual = 0.0202953, Final residual = 1.46967e-08, No Iterations 1
+Time = 0.065s
+
+smoothSolver:  Solving for T, Initial residual = 0.0186356, Final residual = 1.348e-08, No Iterations 1
+Time = 0.07s
+
+smoothSolver:  Solving for T, Initial residual = 0.0172268, Final residual = 1.24473e-08, No Iterations 1
+Time = 0.075s
+
+smoothSolver:  Solving for T, Initial residual = 0.0160161, Final residual = 1.15598e-08, No Iterations 1
+Time = 0.08s
+
+smoothSolver:  Solving for T, Initial residual = 0.0149644, Final residual = 1.07888e-08, No Iterations 1
+Time = 0.085s
+
+smoothSolver:  Solving for T, Initial residual = 0.0140422, Final residual = 1.0113e-08, No Iterations 1
+Time = 0.09s
+
+smoothSolver:  Solving for T, Initial residual = 0.0132272, Final residual = 9.51557e-09, No Iterations 1
+Time = 0.095s
+
+smoothSolver:  Solving for T, Initial residual = 0.0125015, Final residual = 8.98376e-09, No Iterations 1
+Time = 0.1s
+
+smoothSolver:  Solving for T, Initial residual = 0.0118514, Final residual = 8.50729e-09, No Iterations 1
+Time = 0.105s
+
+smoothSolver:  Solving for T, Initial residual = 0.0112655, Final residual = 8.07796e-09, No Iterations 1
+Time = 0.11s
+
+smoothSolver:  Solving for T, Initial residual = 0.0107348, Final residual = 7.6891e-09, No Iterations 1
+Time = 0.115s
+
+smoothSolver:  Solving for T, Initial residual = 0.0102519, Final residual = 7.33525e-09, No Iterations 1
+Time = 0.12s
+
+smoothSolver:  Solving for T, Initial residual = 0.00981052, Final residual = 7.0119e-09, No Iterations 1
+Time = 0.125s
+
+smoothSolver:  Solving for T, Initial residual = 0.0094056, Final residual = 6.71526e-09, No Iterations 1
+Time = 0.13s
+
+smoothSolver:  Solving for T, Initial residual = 0.00903278, Final residual = 6.44215e-09, No Iterations 1
+Time = 0.135s
+
+smoothSolver:  Solving for T, Initial residual = 0.0086884, Final residual = 6.1899e-09, No Iterations 1
+Time = 0.14s
+
+smoothSolver:  Solving for T, Initial residual = 0.00836931, Final residual = 5.95619e-09, No Iterations 1
+Time = 0.145s
+
+smoothSolver:  Solving for T, Initial residual = 0.00807282, Final residual = 5.73906e-09, No Iterations 1
+Time = 0.15s
+
+smoothSolver:  Solving for T, Initial residual = 0.00779663, Final residual = 5.53681e-09, No Iterations 1
+Time = 0.155s
+
+smoothSolver:  Solving for T, Initial residual = 0.00753871, Final residual = 5.34795e-09, No Iterations 1
+Time = 0.16s
+
+smoothSolver:  Solving for T, Initial residual = 0.00729731, Final residual = 5.17121e-09, No Iterations 1
+Time = 0.165s
+
+smoothSolver:  Solving for T, Initial residual = 0.00707089, Final residual = 5.00545e-09, No Iterations 1
+Time = 0.17s
+
+smoothSolver:  Solving for T, Initial residual = 0.0068581, Final residual = 4.84969e-09, No Iterations 1
+Time = 0.175s
+
+smoothSolver:  Solving for T, Initial residual = 0.00665774, Final residual = 4.70304e-09, No Iterations 1
+Time = 0.18s
+
+smoothSolver:  Solving for T, Initial residual = 0.00646875, Final residual = 4.56473e-09, No Iterations 1
+Time = 0.185s
+
+smoothSolver:  Solving for T, Initial residual = 0.00629021, Final residual = 4.43407e-09, No Iterations 1
+Time = 0.19s
+
+smoothSolver:  Solving for T, Initial residual = 0.00612125, Final residual = 4.31045e-09, No Iterations 1
+Time = 0.195s
+
+smoothSolver:  Solving for T, Initial residual = 0.00596113, Final residual = 4.1933e-09, No Iterations 1
+Time = 0.2s
+
+smoothSolver:  Solving for T, Initial residual = 0.00580918, Final residual = 4.08215e-09, No Iterations 1
+Time = 0.205s
+
+smoothSolver:  Solving for T, Initial residual = 0.00566478, Final residual = 3.97653e-09, No Iterations 1
+Time = 0.21s
+
+smoothSolver:  Solving for T, Initial residual = 0.00552738, Final residual = 3.87605e-09, No Iterations 1
+Time = 0.215s
+
+smoothSolver:  Solving for T, Initial residual = 0.0053965, Final residual = 3.78033e-09, No Iterations 1
+Time = 0.22s
+
+smoothSolver:  Solving for T, Initial residual = 0.00527167, Final residual = 3.68906e-09, No Iterations 1
+Time = 0.225s
+
+smoothSolver:  Solving for T, Initial residual = 0.00515248, Final residual = 3.60193e-09, No Iterations 1
+Time = 0.23s
+
+smoothSolver:  Solving for T, Initial residual = 0.00503857, Final residual = 3.51866e-09, No Iterations 1
+Time = 0.235s
+
+smoothSolver:  Solving for T, Initial residual = 0.00492958, Final residual = 3.43901e-09, No Iterations 1
+Time = 0.24s
+
+smoothSolver:  Solving for T, Initial residual = 0.00482521, Final residual = 3.36274e-09, No Iterations 1
+Time = 0.245s
+
+smoothSolver:  Solving for T, Initial residual = 0.00472517, Final residual = 3.28964e-09, No Iterations 1
+Time = 0.25s
+
+smoothSolver:  Solving for T, Initial residual = 0.00462919, Final residual = 3.21952e-09, No Iterations 1
+Time = 0.255s
+
+smoothSolver:  Solving for T, Initial residual = 0.00453703, Final residual = 3.15221e-09, No Iterations 1
+Time = 0.26s
+
+smoothSolver:  Solving for T, Initial residual = 0.00444847, Final residual = 3.08753e-09, No Iterations 1
+Time = 0.265s
+
+smoothSolver:  Solving for T, Initial residual = 0.00436331, Final residual = 3.02534e-09, No Iterations 1
+Time = 0.27s
+
+smoothSolver:  Solving for T, Initial residual = 0.00428134, Final residual = 2.9655e-09, No Iterations 1
+Time = 0.275s
+
+smoothSolver:  Solving for T, Initial residual = 0.0042024, Final residual = 2.90787e-09, No Iterations 1
+Time = 0.28s
+
+smoothSolver:  Solving for T, Initial residual = 0.00412631, Final residual = 2.85234e-09, No Iterations 1
+Time = 0.285s
+
+smoothSolver:  Solving for T, Initial residual = 0.00405294, Final residual = 2.79879e-09, No Iterations 1
+Time = 0.29s
+
+smoothSolver:  Solving for T, Initial residual = 0.00398212, Final residual = 2.74712e-09, No Iterations 1
+Time = 0.295s
+
+smoothSolver:  Solving for T, Initial residual = 0.00391374, Final residual = 2.69724e-09, No Iterations 1
+Time = 0.3s
+
+smoothSolver:  Solving for T, Initial residual = 0.00384767, Final residual = 2.64904e-09, No Iterations 1
+Time = 0.305s
+
+smoothSolver:  Solving for T, Initial residual = 0.00378379, Final residual = 2.60246e-09, No Iterations 1
+Time = 0.31s
+
+smoothSolver:  Solving for T, Initial residual = 0.003722, Final residual = 2.55741e-09, No Iterations 1
+Time = 0.315s
+
+smoothSolver:  Solving for T, Initial residual = 0.0036622, Final residual = 2.51381e-09, No Iterations 1
+Time = 0.32s
+
+smoothSolver:  Solving for T, Initial residual = 0.00360428, Final residual = 2.4716e-09, No Iterations 1
+Time = 0.325s
+
+smoothSolver:  Solving for T, Initial residual = 0.00354817, Final residual = 2.43071e-09, No Iterations 1
+Time = 0.33s
+
+smoothSolver:  Solving for T, Initial residual = 0.00349379, Final residual = 2.39108e-09, No Iterations 1
+Time = 0.335s
+
+smoothSolver:  Solving for T, Initial residual = 0.00344104, Final residual = 2.35265e-09, No Iterations 1
+Time = 0.34s
+
+smoothSolver:  Solving for T, Initial residual = 0.00338986, Final residual = 2.31538e-09, No Iterations 1
+Time = 0.345s
+
+smoothSolver:  Solving for T, Initial residual = 0.00334018, Final residual = 2.2792e-09, No Iterations 1
+Time = 0.35s
+
+smoothSolver:  Solving for T, Initial residual = 0.00329194, Final residual = 2.24408e-09, No Iterations 1
+Time = 0.355s
+
+smoothSolver:  Solving for T, Initial residual = 0.00324507, Final residual = 2.20996e-09, No Iterations 1
+Time = 0.36s
+
+smoothSolver:  Solving for T, Initial residual = 0.00319951, Final residual = 2.17681e-09, No Iterations 1
+Time = 0.365s
+
+smoothSolver:  Solving for T, Initial residual = 0.00315522, Final residual = 2.14458e-09, No Iterations 1
+Time = 0.37s
+
+smoothSolver:  Solving for T, Initial residual = 0.00311213, Final residual = 2.11324e-09, No Iterations 1
+Time = 0.375s
+
+smoothSolver:  Solving for T, Initial residual = 0.00307021, Final residual = 2.08275e-09, No Iterations 1
+Time = 0.38s
+
+smoothSolver:  Solving for T, Initial residual = 0.0030294, Final residual = 2.05308e-09, No Iterations 1
+Time = 0.385s
+
+smoothSolver:  Solving for T, Initial residual = 0.00298967, Final residual = 2.02419e-09, No Iterations 1
+Time = 0.39s
+
+smoothSolver:  Solving for T, Initial residual = 0.00295096, Final residual = 1.99605e-09, No Iterations 1
+Time = 0.395s
+
+smoothSolver:  Solving for T, Initial residual = 0.00291324, Final residual = 1.96864e-09, No Iterations 1
+Time = 0.4s
+
+smoothSolver:  Solving for T, Initial residual = 0.00287647, Final residual = 1.94193e-09, No Iterations 1
+Time = 0.405s
+
+smoothSolver:  Solving for T, Initial residual = 0.00284062, Final residual = 1.91589e-09, No Iterations 1
+Time = 0.41s
+
+smoothSolver:  Solving for T, Initial residual = 0.00280565, Final residual = 1.8905e-09, No Iterations 1
+Time = 0.415s
+
+smoothSolver:  Solving for T, Initial residual = 0.00277154, Final residual = 1.86573e-09, No Iterations 1
+Time = 0.42s
+
+smoothSolver:  Solving for T, Initial residual = 0.00273824, Final residual = 1.84156e-09, No Iterations 1
+Time = 0.425s
+
+smoothSolver:  Solving for T, Initial residual = 0.00270574, Final residual = 1.81797e-09, No Iterations 1
+Time = 0.43s
+
+smoothSolver:  Solving for T, Initial residual = 0.00267399, Final residual = 1.79494e-09, No Iterations 1
+Time = 0.435s
+
+smoothSolver:  Solving for T, Initial residual = 0.00264298, Final residual = 1.77245e-09, No Iterations 1
+Time = 0.44s
+
+smoothSolver:  Solving for T, Initial residual = 0.00261269, Final residual = 1.75048e-09, No Iterations 1
+Time = 0.445s
+
+smoothSolver:  Solving for T, Initial residual = 0.00258308, Final residual = 1.72901e-09, No Iterations 1
+Time = 0.45s
+
+smoothSolver:  Solving for T, Initial residual = 0.00255413, Final residual = 1.70803e-09, No Iterations 1
+Time = 0.455s
+
+smoothSolver:  Solving for T, Initial residual = 0.00252583, Final residual = 1.68752e-09, No Iterations 1
+Time = 0.46s
+
+smoothSolver:  Solving for T, Initial residual = 0.00249814, Final residual = 1.66746e-09, No Iterations 1
+Time = 0.465s
+
+smoothSolver:  Solving for T, Initial residual = 0.00247106, Final residual = 1.64784e-09, No Iterations 1
+Time = 0.47s
+
+smoothSolver:  Solving for T, Initial residual = 0.00244456, Final residual = 1.62865e-09, No Iterations 1
+Time = 0.475s
+
+smoothSolver:  Solving for T, Initial residual = 0.00241862, Final residual = 1.60987e-09, No Iterations 1
+Time = 0.48s
+
+smoothSolver:  Solving for T, Initial residual = 0.00239322, Final residual = 1.59149e-09, No Iterations 1
+Time = 0.485s
+
+smoothSolver:  Solving for T, Initial residual = 0.00236835, Final residual = 1.5735e-09, No Iterations 1
+Time = 0.49s
+
+smoothSolver:  Solving for T, Initial residual = 0.002344, Final residual = 1.55588e-09, No Iterations 1
+Time = 0.495s
+
+smoothSolver:  Solving for T, Initial residual = 0.00232014, Final residual = 1.53862e-09, No Iterations 1
+Time = 0.5s
+
+smoothSolver:  Solving for T, Initial residual = 0.00229676, Final residual = 1.52172e-09, No Iterations 1
+Time = 0.505s
+
+smoothSolver:  Solving for T, Initial residual = 0.00227384, Final residual = 1.50516e-09, No Iterations 1
+Time = 0.51s
+
+smoothSolver:  Solving for T, Initial residual = 0.00225138, Final residual = 1.48893e-09, No Iterations 1
+Time = 0.515s
+
+smoothSolver:  Solving for T, Initial residual = 0.00222936, Final residual = 1.47302e-09, No Iterations 1
+Time = 0.52s
+
+smoothSolver:  Solving for T, Initial residual = 0.00220777, Final residual = 1.45743e-09, No Iterations 1
+Time = 0.525s
+
+smoothSolver:  Solving for T, Initial residual = 0.00218659, Final residual = 1.44213e-09, No Iterations 1
+Time = 0.53s
+
+smoothSolver:  Solving for T, Initial residual = 0.00216581, Final residual = 1.42714e-09, No Iterations 1
+Time = 0.535s
+
+smoothSolver:  Solving for T, Initial residual = 0.00214543, Final residual = 1.41243e-09, No Iterations 1
+Time = 0.54s
+
+smoothSolver:  Solving for T, Initial residual = 0.00212542, Final residual = 1.39799e-09, No Iterations 1
+Time = 0.545s
+
+smoothSolver:  Solving for T, Initial residual = 0.00210578, Final residual = 1.38383e-09, No Iterations 1
+Time = 0.55s
+
+smoothSolver:  Solving for T, Initial residual = 0.00208651, Final residual = 1.36993e-09, No Iterations 1
+Time = 0.555s
+
+smoothSolver:  Solving for T, Initial residual = 0.00206758, Final residual = 1.35629e-09, No Iterations 1
+Time = 0.56s
+
+smoothSolver:  Solving for T, Initial residual = 0.00204899, Final residual = 1.3429e-09, No Iterations 1
+Time = 0.565s
+
+smoothSolver:  Solving for T, Initial residual = 0.00203074, Final residual = 1.32975e-09, No Iterations 1
+Time = 0.57s
+
+smoothSolver:  Solving for T, Initial residual = 0.00201281, Final residual = 1.31683e-09, No Iterations 1
+Time = 0.575s
+
+smoothSolver:  Solving for T, Initial residual = 0.00199519, Final residual = 1.30415e-09, No Iterations 1
+Time = 0.58s
+
+smoothSolver:  Solving for T, Initial residual = 0.00197788, Final residual = 1.29169e-09, No Iterations 1
+Time = 0.585s
+
+smoothSolver:  Solving for T, Initial residual = 0.00196086, Final residual = 1.27944e-09, No Iterations 1
+Time = 0.59s
+
+smoothSolver:  Solving for T, Initial residual = 0.00194414, Final residual = 1.26741e-09, No Iterations 1
+Time = 0.595s
+
+smoothSolver:  Solving for T, Initial residual = 0.00192769, Final residual = 1.25559e-09, No Iterations 1
+Time = 0.6s
+
+smoothSolver:  Solving for T, Initial residual = 0.00191153, Final residual = 1.24397e-09, No Iterations 1
+Time = 0.605s
+
+smoothSolver:  Solving for T, Initial residual = 0.00189563, Final residual = 1.23254e-09, No Iterations 1
+Time = 0.61s
+
+smoothSolver:  Solving for T, Initial residual = 0.00188, Final residual = 1.22131e-09, No Iterations 1
+Time = 0.615s
+
+smoothSolver:  Solving for T, Initial residual = 0.00186462, Final residual = 1.21027e-09, No Iterations 1
+Time = 0.62s
+
+smoothSolver:  Solving for T, Initial residual = 0.00184949, Final residual = 1.1994e-09, No Iterations 1
+Time = 0.625s
+
+smoothSolver:  Solving for T, Initial residual = 0.0018346, Final residual = 1.18872e-09, No Iterations 1
+Time = 0.63s
+
+smoothSolver:  Solving for T, Initial residual = 0.00181996, Final residual = 1.17821e-09, No Iterations 1
+Time = 0.635s
+
+smoothSolver:  Solving for T, Initial residual = 0.00180554, Final residual = 1.16787e-09, No Iterations 1
+Time = 0.64s
+
+smoothSolver:  Solving for T, Initial residual = 0.00179135, Final residual = 1.15769e-09, No Iterations 1
+Time = 0.645s
+
+smoothSolver:  Solving for T, Initial residual = 0.00177738, Final residual = 1.14768e-09, No Iterations 1
+Time = 0.65s
+
+smoothSolver:  Solving for T, Initial residual = 0.00176363, Final residual = 1.13783e-09, No Iterations 1
+Time = 0.655s
+
+smoothSolver:  Solving for T, Initial residual = 0.00175009, Final residual = 1.12812e-09, No Iterations 1
+Time = 0.66s
+
+smoothSolver:  Solving for T, Initial residual = 0.00173676, Final residual = 1.11858e-09, No Iterations 1
+Time = 0.665s
+
+smoothSolver:  Solving for T, Initial residual = 0.00172362, Final residual = 1.10917e-09, No Iterations 1
+Time = 0.67s
+
+smoothSolver:  Solving for T, Initial residual = 0.00171069, Final residual = 1.09992e-09, No Iterations 1
+Time = 0.675s
+
+smoothSolver:  Solving for T, Initial residual = 0.00169795, Final residual = 1.0908e-09, No Iterations 1
+Time = 0.68s
+
+smoothSolver:  Solving for T, Initial residual = 0.00168539, Final residual = 1.08182e-09, No Iterations 1
+Time = 0.685s
+
+smoothSolver:  Solving for T, Initial residual = 0.00167302, Final residual = 1.07298e-09, No Iterations 1
+Time = 0.69s
+
+smoothSolver:  Solving for T, Initial residual = 0.00166083, Final residual = 1.06427e-09, No Iterations 1
+Time = 0.695s
+
+smoothSolver:  Solving for T, Initial residual = 0.00164882, Final residual = 1.05568e-09, No Iterations 1
+Time = 0.7s
+
+smoothSolver:  Solving for T, Initial residual = 0.00163698, Final residual = 1.04723e-09, No Iterations 1
+Time = 0.705s
+
+smoothSolver:  Solving for T, Initial residual = 0.00162531, Final residual = 1.03889e-09, No Iterations 1
+Time = 0.71s
+
+smoothSolver:  Solving for T, Initial residual = 0.0016138, Final residual = 1.03068e-09, No Iterations 1
+Time = 0.715s
+
+smoothSolver:  Solving for T, Initial residual = 0.00160246, Final residual = 1.02258e-09, No Iterations 1
+Time = 0.72s
+
+smoothSolver:  Solving for T, Initial residual = 0.00159127, Final residual = 1.01461e-09, No Iterations 1
+Time = 0.725s
+
+smoothSolver:  Solving for T, Initial residual = 0.00158024, Final residual = 1.00674e-09, No Iterations 1
+Time = 0.73s
+
+smoothSolver:  Solving for T, Initial residual = 0.00156936, Final residual = 9.98987e-10, No Iterations 1
+Time = 0.735s
+
+smoothSolver:  Solving for T, Initial residual = 0.00155863, Final residual = 9.91342e-10, No Iterations 1
+Time = 0.74s
+
+smoothSolver:  Solving for T, Initial residual = 0.00154805, Final residual = 9.83803e-10, No Iterations 1
+Time = 0.745s
+
+smoothSolver:  Solving for T, Initial residual = 0.00153761, Final residual = 9.76369e-10, No Iterations 1
+Time = 0.75s
+
+smoothSolver:  Solving for T, Initial residual = 0.00152731, Final residual = 9.69037e-10, No Iterations 1
+Time = 0.755s
+
+smoothSolver:  Solving for T, Initial residual = 0.00151714, Final residual = 9.61805e-10, No Iterations 1
+Time = 0.76s
+
+smoothSolver:  Solving for T, Initial residual = 0.00150711, Final residual = 9.54672e-10, No Iterations 1
+Time = 0.765s
+
+smoothSolver:  Solving for T, Initial residual = 0.00149721, Final residual = 9.47634e-10, No Iterations 1
+Time = 0.77s
+
+smoothSolver:  Solving for T, Initial residual = 0.00148744, Final residual = 9.40691e-10, No Iterations 1
+Time = 0.775s
+
+smoothSolver:  Solving for T, Initial residual = 0.0014778, Final residual = 9.33841e-10, No Iterations 1
+Time = 0.78s
+
+smoothSolver:  Solving for T, Initial residual = 0.00146828, Final residual = 9.27081e-10, No Iterations 1
+Time = 0.785s
+
+smoothSolver:  Solving for T, Initial residual = 0.00145889, Final residual = 9.20411e-10, No Iterations 1
+Time = 0.79s
+
+smoothSolver:  Solving for T, Initial residual = 0.00144961, Final residual = 9.13827e-10, No Iterations 1
+Time = 0.795s
+
+smoothSolver:  Solving for T, Initial residual = 0.00144045, Final residual = 9.0733e-10, No Iterations 1
+Time = 0.8s
+
+smoothSolver:  Solving for T, Initial residual = 0.00143141, Final residual = 9.00916e-10, No Iterations 1
+Time = 0.805s
+
+smoothSolver:  Solving for T, Initial residual = 0.00142248, Final residual = 8.94585e-10, No Iterations 1
+Time = 0.81s
+
+smoothSolver:  Solving for T, Initial residual = 0.00141366, Final residual = 8.88335e-10, No Iterations 1
+Time = 0.815s
+
+smoothSolver:  Solving for T, Initial residual = 0.00140494, Final residual = 8.82164e-10, No Iterations 1
+Time = 0.82s
+
+smoothSolver:  Solving for T, Initial residual = 0.00139634, Final residual = 8.76071e-10, No Iterations 1
+Time = 0.825s
+
+smoothSolver:  Solving for T, Initial residual = 0.00138784, Final residual = 8.70054e-10, No Iterations 1
+Time = 0.83s
+
+smoothSolver:  Solving for T, Initial residual = 0.00137944, Final residual = 8.64113e-10, No Iterations 1
+Time = 0.835s
+
+smoothSolver:  Solving for T, Initial residual = 0.00137114, Final residual = 8.58245e-10, No Iterations 1
+Time = 0.84s
+
+smoothSolver:  Solving for T, Initial residual = 0.00136295, Final residual = 8.5245e-10, No Iterations 1
+Time = 0.845s
+
+smoothSolver:  Solving for T, Initial residual = 0.00135485, Final residual = 8.46726e-10, No Iterations 1
+Time = 0.85s
+
+smoothSolver:  Solving for T, Initial residual = 0.00134684, Final residual = 8.41072e-10, No Iterations 1
+Time = 0.855s
+
+smoothSolver:  Solving for T, Initial residual = 0.00133893, Final residual = 8.35486e-10, No Iterations 1
+Time = 0.86s
+
+smoothSolver:  Solving for T, Initial residual = 0.00133112, Final residual = 8.29968e-10, No Iterations 1
+Time = 0.865s
+
+smoothSolver:  Solving for T, Initial residual = 0.00132339, Final residual = 8.24516e-10, No Iterations 1
+Time = 0.87s
+
+smoothSolver:  Solving for T, Initial residual = 0.00131575, Final residual = 8.19129e-10, No Iterations 1
+Time = 0.875s
+
+smoothSolver:  Solving for T, Initial residual = 0.0013082, Final residual = 8.13806e-10, No Iterations 1
+Time = 0.88s
+
+smoothSolver:  Solving for T, Initial residual = 0.00130074, Final residual = 8.08546e-10, No Iterations 1
+Time = 0.885s
+
+smoothSolver:  Solving for T, Initial residual = 0.00129336, Final residual = 8.03347e-10, No Iterations 1
+Time = 0.89s
+
+smoothSolver:  Solving for T, Initial residual = 0.00128606, Final residual = 7.9821e-10, No Iterations 1
+Time = 0.895s
+
+smoothSolver:  Solving for T, Initial residual = 0.00127885, Final residual = 7.93132e-10, No Iterations 1
+Time = 0.9s
+
+smoothSolver:  Solving for T, Initial residual = 0.00127171, Final residual = 7.88112e-10, No Iterations 1
+Time = 0.905s
+
+smoothSolver:  Solving for T, Initial residual = 0.00126466, Final residual = 7.83151e-10, No Iterations 1
+Time = 0.91s
+
+smoothSolver:  Solving for T, Initial residual = 0.00125768, Final residual = 7.78246e-10, No Iterations 1
+Time = 0.915s
+
+smoothSolver:  Solving for T, Initial residual = 0.00125078, Final residual = 7.73397e-10, No Iterations 1
+Time = 0.92s
+
+smoothSolver:  Solving for T, Initial residual = 0.00124396, Final residual = 7.68603e-10, No Iterations 1
+Time = 0.925s
+
+smoothSolver:  Solving for T, Initial residual = 0.00123721, Final residual = 7.63863e-10, No Iterations 1
+Time = 0.93s
+
+smoothSolver:  Solving for T, Initial residual = 0.00123053, Final residual = 7.59176e-10, No Iterations 1
+Time = 0.935s
+
+smoothSolver:  Solving for T, Initial residual = 0.00122393, Final residual = 7.54542e-10, No Iterations 1
+Time = 0.94s
+
+smoothSolver:  Solving for T, Initial residual = 0.00121739, Final residual = 7.49958e-10, No Iterations 1
+Time = 0.945s
+
+smoothSolver:  Solving for T, Initial residual = 0.00121093, Final residual = 7.45426e-10, No Iterations 1
+Time = 0.95s
+
+smoothSolver:  Solving for T, Initial residual = 0.00120453, Final residual = 7.40943e-10, No Iterations 1
+Time = 0.955s
+
+smoothSolver:  Solving for T, Initial residual = 0.0011982, Final residual = 7.36509e-10, No Iterations 1
+Time = 0.96s
+
+smoothSolver:  Solving for T, Initial residual = 0.00119193, Final residual = 7.32123e-10, No Iterations 1
+Time = 0.965s
+
+smoothSolver:  Solving for T, Initial residual = 0.00118573, Final residual = 7.27785e-10, No Iterations 1
+Time = 0.97s
+
+smoothSolver:  Solving for T, Initial residual = 0.0011796, Final residual = 7.23493e-10, No Iterations 1
+Time = 0.975s
+
+smoothSolver:  Solving for T, Initial residual = 0.00117353, Final residual = 7.19248e-10, No Iterations 1
+Time = 0.98s
+
+smoothSolver:  Solving for T, Initial residual = 0.00116752, Final residual = 7.15047e-10, No Iterations 1
+Time = 0.985s
+
+smoothSolver:  Solving for T, Initial residual = 0.00116157, Final residual = 7.10891e-10, No Iterations 1
+Time = 0.99s
+
+smoothSolver:  Solving for T, Initial residual = 0.00115568, Final residual = 7.06779e-10, No Iterations 1
+Time = 0.995s
+
+smoothSolver:  Solving for T, Initial residual = 0.00114985, Final residual = 7.02711e-10, No Iterations 1
+Time = 1s
+
+smoothSolver:  Solving for T, Initial residual = 0.00114408, Final residual = 6.98685e-10, No Iterations 1
+Time = 1.005s
+
+smoothSolver:  Solving for T, Initial residual = 0.00113837, Final residual = 6.94701e-10, No Iterations 1
+Time = 1.01s
+
+smoothSolver:  Solving for T, Initial residual = 0.00113271, Final residual = 6.90758e-10, No Iterations 1
+Time = 1.015s
+
+smoothSolver:  Solving for T, Initial residual = 0.00112711, Final residual = 6.86856e-10, No Iterations 1
+Time = 1.02s
+
+smoothSolver:  Solving for T, Initial residual = 0.00112157, Final residual = 6.82994e-10, No Iterations 1
+Time = 1.025s
+
+smoothSolver:  Solving for T, Initial residual = 0.00111608, Final residual = 6.79171e-10, No Iterations 1
+Time = 1.03s
+
+smoothSolver:  Solving for T, Initial residual = 0.00111064, Final residual = 6.75388e-10, No Iterations 1
+Time = 1.035s
+
+smoothSolver:  Solving for T, Initial residual = 0.00110526, Final residual = 6.71642e-10, No Iterations 1
+Time = 1.04s
+
+smoothSolver:  Solving for T, Initial residual = 0.00109993, Final residual = 6.67935e-10, No Iterations 1
+Time = 1.045s
+
+smoothSolver:  Solving for T, Initial residual = 0.00109465, Final residual = 6.64265e-10, No Iterations 1
+Time = 1.05s
+
+smoothSolver:  Solving for T, Initial residual = 0.00108941, Final residual = 6.60631e-10, No Iterations 1
+Time = 1.055s
+
+smoothSolver:  Solving for T, Initial residual = 0.00108423, Final residual = 6.57034e-10, No Iterations 1
+Time = 1.06s
+
+smoothSolver:  Solving for T, Initial residual = 0.0010791, Final residual = 6.53472e-10, No Iterations 1
+Time = 1.065s
+
+smoothSolver:  Solving for T, Initial residual = 0.00107402, Final residual = 6.49946e-10, No Iterations 1
+Time = 1.07s
+
+smoothSolver:  Solving for T, Initial residual = 0.00106898, Final residual = 6.46454e-10, No Iterations 1
+Time = 1.075s
+
+smoothSolver:  Solving for T, Initial residual = 0.001064, Final residual = 6.42996e-10, No Iterations 1
+Time = 1.08s
+
+smoothSolver:  Solving for T, Initial residual = 0.00105905, Final residual = 6.39572e-10, No Iterations 1
+Time = 1.085s
+
+smoothSolver:  Solving for T, Initial residual = 0.00105416, Final residual = 6.36182e-10, No Iterations 1
+Time = 1.09s
+
+smoothSolver:  Solving for T, Initial residual = 0.00104931, Final residual = 6.32823e-10, No Iterations 1
+Time = 1.095s
+
+smoothSolver:  Solving for T, Initial residual = 0.0010445, Final residual = 6.29498e-10, No Iterations 1
+Time = 1.1s
+
+smoothSolver:  Solving for T, Initial residual = 0.00103974, Final residual = 6.26204e-10, No Iterations 1
+Time = 1.105s
+
+smoothSolver:  Solving for T, Initial residual = 0.00103502, Final residual = 6.22941e-10, No Iterations 1
+Time = 1.11s
+
+smoothSolver:  Solving for T, Initial residual = 0.00103034, Final residual = 6.1971e-10, No Iterations 1
+Time = 1.115s
+
+smoothSolver:  Solving for T, Initial residual = 0.0010257, Final residual = 6.16509e-10, No Iterations 1
+Time = 1.12s
+
+smoothSolver:  Solving for T, Initial residual = 0.00102111, Final residual = 6.13338e-10, No Iterations 1
+Time = 1.125s
+
+smoothSolver:  Solving for T, Initial residual = 0.00101656, Final residual = 6.10197e-10, No Iterations 1
+Time = 1.13s
+
+smoothSolver:  Solving for T, Initial residual = 0.00101204, Final residual = 6.07085e-10, No Iterations 1
+Time = 1.135s
+
+smoothSolver:  Solving for T, Initial residual = 0.00100757, Final residual = 6.04002e-10, No Iterations 1
+Time = 1.14s
+
+smoothSolver:  Solving for T, Initial residual = 0.00100314, Final residual = 6.00948e-10, No Iterations 1
+Time = 1.145s
+
+smoothSolver:  Solving for T, Initial residual = 0.000998746, Final residual = 5.97922e-10, No Iterations 1
+Time = 1.15s
+
+smoothSolver:  Solving for T, Initial residual = 0.00099439, Final residual = 5.94924e-10, No Iterations 1
+Time = 1.155s
+
+smoothSolver:  Solving for T, Initial residual = 0.000990072, Final residual = 5.91953e-10, No Iterations 1
+Time = 1.16s
+
+smoothSolver:  Solving for T, Initial residual = 0.000985791, Final residual = 5.89009e-10, No Iterations 1
+Time = 1.165s
+
+smoothSolver:  Solving for T, Initial residual = 0.000981548, Final residual = 5.86092e-10, No Iterations 1
+Time = 1.17s
+
+smoothSolver:  Solving for T, Initial residual = 0.00097734, Final residual = 5.83201e-10, No Iterations 1
+Time = 1.175s
+
+smoothSolver:  Solving for T, Initial residual = 0.000973169, Final residual = 5.80337e-10, No Iterations 1
+Time = 1.18s
+
+smoothSolver:  Solving for T, Initial residual = 0.000969033, Final residual = 5.77498e-10, No Iterations 1
+Time = 1.185s
+
+smoothSolver:  Solving for T, Initial residual = 0.000964932, Final residual = 5.74684e-10, No Iterations 1
+Time = 1.19s
+
+smoothSolver:  Solving for T, Initial residual = 0.000960866, Final residual = 5.71896e-10, No Iterations 1
+Time = 1.195s
+
+smoothSolver:  Solving for T, Initial residual = 0.000956833, Final residual = 5.69132e-10, No Iterations 1
+Time = 1.2s
+
+smoothSolver:  Solving for T, Initial residual = 0.000952835, Final residual = 5.66393e-10, No Iterations 1
+Time = 1.205s
+
+smoothSolver:  Solving for T, Initial residual = 0.00094887, Final residual = 5.63678e-10, No Iterations 1
+Time = 1.21s
+
+smoothSolver:  Solving for T, Initial residual = 0.000944937, Final residual = 5.60986e-10, No Iterations 1
+Time = 1.215s
+
+smoothSolver:  Solving for T, Initial residual = 0.000941038, Final residual = 5.58318e-10, No Iterations 1
+Time = 1.22s
+
+smoothSolver:  Solving for T, Initial residual = 0.00093717, Final residual = 5.55674e-10, No Iterations 1
+Time = 1.225s
+
+smoothSolver:  Solving for T, Initial residual = 0.000933334, Final residual = 5.53052e-10, No Iterations 1
+Time = 1.23s
+
+smoothSolver:  Solving for T, Initial residual = 0.000929529, Final residual = 5.50453e-10, No Iterations 1
+Time = 1.235s
+
+smoothSolver:  Solving for T, Initial residual = 0.000925755, Final residual = 5.47876e-10, No Iterations 1
+Time = 1.24s
+
+smoothSolver:  Solving for T, Initial residual = 0.000922011, Final residual = 5.45321e-10, No Iterations 1
+Time = 1.245s
+
+smoothSolver:  Solving for T, Initial residual = 0.000918298, Final residual = 5.42788e-10, No Iterations 1
+Time = 1.25s
+
+smoothSolver:  Solving for T, Initial residual = 0.000914614, Final residual = 5.40277e-10, No Iterations 1
+Time = 1.255s
+
+smoothSolver:  Solving for T, Initial residual = 0.00091096, Final residual = 5.37787e-10, No Iterations 1
+Time = 1.26s
+
+smoothSolver:  Solving for T, Initial residual = 0.000907335, Final residual = 5.35318e-10, No Iterations 1
+Time = 1.265s
+
+smoothSolver:  Solving for T, Initial residual = 0.000903739, Final residual = 5.3287e-10, No Iterations 1
+Time = 1.27s
+
+smoothSolver:  Solving for T, Initial residual = 0.000900171, Final residual = 5.30442e-10, No Iterations 1
+Time = 1.275s
+
+smoothSolver:  Solving for T, Initial residual = 0.000896631, Final residual = 5.28035e-10, No Iterations 1
+Time = 1.28s
+
+smoothSolver:  Solving for T, Initial residual = 0.000893119, Final residual = 5.25647e-10, No Iterations 1
+Time = 1.285s
+
+smoothSolver:  Solving for T, Initial residual = 0.000889635, Final residual = 5.2328e-10, No Iterations 1
+Time = 1.29s
+
+smoothSolver:  Solving for T, Initial residual = 0.000886177, Final residual = 5.20932e-10, No Iterations 1
+Time = 1.295s
+
+smoothSolver:  Solving for T, Initial residual = 0.000882746, Final residual = 5.18603e-10, No Iterations 1
+Time = 1.3s
+
+smoothSolver:  Solving for T, Initial residual = 0.000879342, Final residual = 5.16294e-10, No Iterations 1
+Time = 1.305s
+
+smoothSolver:  Solving for T, Initial residual = 0.000875964, Final residual = 5.14003e-10, No Iterations 1
+Time = 1.31s
+
+smoothSolver:  Solving for T, Initial residual = 0.000872611, Final residual = 5.11731e-10, No Iterations 1
+Time = 1.315s
+
+smoothSolver:  Solving for T, Initial residual = 0.000869285, Final residual = 5.09478e-10, No Iterations 1
+Time = 1.32s
+
+smoothSolver:  Solving for T, Initial residual = 0.000865983, Final residual = 5.07242e-10, No Iterations 1
+Time = 1.325s
+
+smoothSolver:  Solving for T, Initial residual = 0.000862707, Final residual = 5.05025e-10, No Iterations 1
+Time = 1.33s
+
+smoothSolver:  Solving for T, Initial residual = 0.000859455, Final residual = 5.02826e-10, No Iterations 1
+Time = 1.335s
+
+smoothSolver:  Solving for T, Initial residual = 0.000856228, Final residual = 5.00644e-10, No Iterations 1
+Time = 1.34s
+
+smoothSolver:  Solving for T, Initial residual = 0.000853024, Final residual = 4.9848e-10, No Iterations 1
+Time = 1.345s
+
+smoothSolver:  Solving for T, Initial residual = 0.000849845, Final residual = 4.96333e-10, No Iterations 1
+Time = 1.35s
+
+smoothSolver:  Solving for T, Initial residual = 0.000846689, Final residual = 4.94203e-10, No Iterations 1
+Time = 1.355s
+
+smoothSolver:  Solving for T, Initial residual = 0.000843557, Final residual = 4.92089e-10, No Iterations 1
+Time = 1.36s
+
+smoothSolver:  Solving for T, Initial residual = 0.000840448, Final residual = 4.89993e-10, No Iterations 1
+Time = 1.365s
+
+smoothSolver:  Solving for T, Initial residual = 0.000837361, Final residual = 4.87913e-10, No Iterations 1
+Time = 1.37s
+
+smoothSolver:  Solving for T, Initial residual = 0.000834297, Final residual = 4.85849e-10, No Iterations 1
+Time = 1.375s
+
+smoothSolver:  Solving for T, Initial residual = 0.000831256, Final residual = 4.83801e-10, No Iterations 1
+Time = 1.38s
+
+smoothSolver:  Solving for T, Initial residual = 0.000828236, Final residual = 4.81769e-10, No Iterations 1
+Time = 1.385s
+
+smoothSolver:  Solving for T, Initial residual = 0.000825239, Final residual = 4.79753e-10, No Iterations 1
+Time = 1.39s
+
+smoothSolver:  Solving for T, Initial residual = 0.000822263, Final residual = 4.77753e-10, No Iterations 1
+Time = 1.395s
+
+smoothSolver:  Solving for T, Initial residual = 0.000819309, Final residual = 4.75768e-10, No Iterations 1
+Time = 1.4s
+
+smoothSolver:  Solving for T, Initial residual = 0.000816375, Final residual = 4.73798e-10, No Iterations 1
+Time = 1.405s
+
+smoothSolver:  Solving for T, Initial residual = 0.000813463, Final residual = 4.71843e-10, No Iterations 1
+Time = 1.41s
+
+smoothSolver:  Solving for T, Initial residual = 0.000810571, Final residual = 4.69904e-10, No Iterations 1
+Time = 1.415s
+
+smoothSolver:  Solving for T, Initial residual = 0.0008077, Final residual = 4.67978e-10, No Iterations 1
+Time = 1.42s
+
+smoothSolver:  Solving for T, Initial residual = 0.000804849, Final residual = 4.66068e-10, No Iterations 1
+Time = 1.425s
+
+smoothSolver:  Solving for T, Initial residual = 0.000802018, Final residual = 4.64172e-10, No Iterations 1
+Time = 1.43s
+
+smoothSolver:  Solving for T, Initial residual = 0.000799207, Final residual = 4.6229e-10, No Iterations 1
+Time = 1.435s
+
+smoothSolver:  Solving for T, Initial residual = 0.000796416, Final residual = 4.60422e-10, No Iterations 1
+Time = 1.44s
+
+smoothSolver:  Solving for T, Initial residual = 0.000793644, Final residual = 4.58569e-10, No Iterations 1
+Time = 1.445s
+
+smoothSolver:  Solving for T, Initial residual = 0.000790891, Final residual = 4.56729e-10, No Iterations 1
+Time = 1.45s
+
+smoothSolver:  Solving for T, Initial residual = 0.000788157, Final residual = 4.54903e-10, No Iterations 1
+Time = 1.455s
+
+smoothSolver:  Solving for T, Initial residual = 0.000785443, Final residual = 4.5309e-10, No Iterations 1
+Time = 1.46s
+
+smoothSolver:  Solving for T, Initial residual = 0.000782746, Final residual = 4.51291e-10, No Iterations 1
+Time = 1.465s
+
+smoothSolver:  Solving for T, Initial residual = 0.000780069, Final residual = 4.49505e-10, No Iterations 1
+Time = 1.47s
+
+smoothSolver:  Solving for T, Initial residual = 0.000777409, Final residual = 4.47732e-10, No Iterations 1
+Time = 1.475s
+
+smoothSolver:  Solving for T, Initial residual = 0.000774768, Final residual = 4.45972e-10, No Iterations 1
+Time = 1.48s
+
+smoothSolver:  Solving for T, Initial residual = 0.000772144, Final residual = 4.44225e-10, No Iterations 1
+Time = 1.485s
+
+smoothSolver:  Solving for T, Initial residual = 0.000769539, Final residual = 4.42491e-10, No Iterations 1
+Time = 1.49s
+
+smoothSolver:  Solving for T, Initial residual = 0.00076695, Final residual = 4.40769e-10, No Iterations 1
+Time = 1.495s
+
+smoothSolver:  Solving for T, Initial residual = 0.000764379, Final residual = 4.3906e-10, No Iterations 1
+Time = 1.5s
+
+smoothSolver:  Solving for T, Initial residual = 0.000761826, Final residual = 4.37363e-10, No Iterations 1
+Time = 1.505s
+
+smoothSolver:  Solving for T, Initial residual = 0.000759289, Final residual = 4.35679e-10, No Iterations 1
+Time = 1.51s
+
+smoothSolver:  Solving for T, Initial residual = 0.000756769, Final residual = 4.34006e-10, No Iterations 1
+Time = 1.515s
+
+smoothSolver:  Solving for T, Initial residual = 0.000754266, Final residual = 4.32345e-10, No Iterations 1
+Time = 1.52s
+
+smoothSolver:  Solving for T, Initial residual = 0.000751779, Final residual = 4.30696e-10, No Iterations 1
+Time = 1.525s
+
+smoothSolver:  Solving for T, Initial residual = 0.000749309, Final residual = 4.29059e-10, No Iterations 1
+Time = 1.53s
+
+smoothSolver:  Solving for T, Initial residual = 0.000746854, Final residual = 4.27434e-10, No Iterations 1
+Time = 1.535s
+
+smoothSolver:  Solving for T, Initial residual = 0.000744416, Final residual = 4.2582e-10, No Iterations 1
+Time = 1.54s
+
+smoothSolver:  Solving for T, Initial residual = 0.000741994, Final residual = 4.24217e-10, No Iterations 1
+Time = 1.545s
+
+smoothSolver:  Solving for T, Initial residual = 0.000739587, Final residual = 4.22626e-10, No Iterations 1
+Time = 1.55s
+
+smoothSolver:  Solving for T, Initial residual = 0.000737196, Final residual = 4.21045e-10, No Iterations 1
+Time = 1.555s
+
+smoothSolver:  Solving for T, Initial residual = 0.000734821, Final residual = 4.19476e-10, No Iterations 1
+Time = 1.56s
+
+smoothSolver:  Solving for T, Initial residual = 0.000732461, Final residual = 4.17918e-10, No Iterations 1
+Time = 1.565s
+
+smoothSolver:  Solving for T, Initial residual = 0.000730115, Final residual = 4.1637e-10, No Iterations 1
+Time = 1.57s
+
+smoothSolver:  Solving for T, Initial residual = 0.000727785, Final residual = 4.14834e-10, No Iterations 1
+Time = 1.575s
+
+smoothSolver:  Solving for T, Initial residual = 0.00072547, Final residual = 4.13307e-10, No Iterations 1
+Time = 1.58s
+
+smoothSolver:  Solving for T, Initial residual = 0.000723169, Final residual = 4.11792e-10, No Iterations 1
+Time = 1.585s
+
+smoothSolver:  Solving for T, Initial residual = 0.000720883, Final residual = 4.10287e-10, No Iterations 1
+Time = 1.59s
+
+smoothSolver:  Solving for T, Initial residual = 0.000718611, Final residual = 4.08792e-10, No Iterations 1
+Time = 1.595s
+
+smoothSolver:  Solving for T, Initial residual = 0.000716354, Final residual = 4.07307e-10, No Iterations 1
+Time = 1.6s
+
+smoothSolver:  Solving for T, Initial residual = 0.00071411, Final residual = 4.05832e-10, No Iterations 1
+Time = 1.605s
+
+smoothSolver:  Solving for T, Initial residual = 0.000711881, Final residual = 4.04368e-10, No Iterations 1
+Time = 1.61s
+
+smoothSolver:  Solving for T, Initial residual = 0.000709665, Final residual = 4.02913e-10, No Iterations 1
+Time = 1.615s
+
+smoothSolver:  Solving for T, Initial residual = 0.000707464, Final residual = 4.01468e-10, No Iterations 1
+Time = 1.62s
+
+smoothSolver:  Solving for T, Initial residual = 0.000705276, Final residual = 4.00033e-10, No Iterations 1
+Time = 1.625s
+
+smoothSolver:  Solving for T, Initial residual = 0.000703101, Final residual = 3.98607e-10, No Iterations 1
+Time = 1.63s
+
+smoothSolver:  Solving for T, Initial residual = 0.00070094, Final residual = 3.97192e-10, No Iterations 1
+Time = 1.635s
+
+smoothSolver:  Solving for T, Initial residual = 0.000698792, Final residual = 3.95785e-10, No Iterations 1
+Time = 1.64s
+
+smoothSolver:  Solving for T, Initial residual = 0.000696657, Final residual = 3.94388e-10, No Iterations 1
+Time = 1.645s
+
+smoothSolver:  Solving for T, Initial residual = 0.000694535, Final residual = 3.93e-10, No Iterations 1
+Time = 1.65s
+
+smoothSolver:  Solving for T, Initial residual = 0.000692426, Final residual = 3.91621e-10, No Iterations 1
+Time = 1.655s
+
+smoothSolver:  Solving for T, Initial residual = 0.00069033, Final residual = 3.90252e-10, No Iterations 1
+Time = 1.66s
+
+smoothSolver:  Solving for T, Initial residual = 0.000688246, Final residual = 3.88891e-10, No Iterations 1
+Time = 1.665s
+
+smoothSolver:  Solving for T, Initial residual = 0.000686175, Final residual = 3.8754e-10, No Iterations 1
+Time = 1.67s
+
+smoothSolver:  Solving for T, Initial residual = 0.000684117, Final residual = 3.86197e-10, No Iterations 1
+Time = 1.675s
+
+smoothSolver:  Solving for T, Initial residual = 0.00068207, Final residual = 3.84863e-10, No Iterations 1
+Time = 1.68s
+
+smoothSolver:  Solving for T, Initial residual = 0.000680036, Final residual = 3.83538e-10, No Iterations 1
+Time = 1.685s
+
+smoothSolver:  Solving for T, Initial residual = 0.000678014, Final residual = 3.82221e-10, No Iterations 1
+Time = 1.69s
+
+smoothSolver:  Solving for T, Initial residual = 0.000676004, Final residual = 3.80913e-10, No Iterations 1
+Time = 1.695s
+
+smoothSolver:  Solving for T, Initial residual = 0.000674006, Final residual = 3.79613e-10, No Iterations 1
+Time = 1.7s
+
+smoothSolver:  Solving for T, Initial residual = 0.00067202, Final residual = 3.78322e-10, No Iterations 1
+Time = 1.705s
+
+smoothSolver:  Solving for T, Initial residual = 0.000670045, Final residual = 3.77039e-10, No Iterations 1
+Time = 1.71s
+
+smoothSolver:  Solving for T, Initial residual = 0.000668082, Final residual = 3.75765e-10, No Iterations 1
+Time = 1.715s
+
+smoothSolver:  Solving for T, Initial residual = 0.000666131, Final residual = 3.74498e-10, No Iterations 1
+Time = 1.72s
+
+smoothSolver:  Solving for T, Initial residual = 0.00066419, Final residual = 3.7324e-10, No Iterations 1
+Time = 1.725s
+
+smoothSolver:  Solving for T, Initial residual = 0.000662261, Final residual = 3.71989e-10, No Iterations 1
+Time = 1.73s
+
+smoothSolver:  Solving for T, Initial residual = 0.000660344, Final residual = 3.70747e-10, No Iterations 1
+Time = 1.735s
+
+smoothSolver:  Solving for T, Initial residual = 0.000658437, Final residual = 3.69512e-10, No Iterations 1
+Time = 1.74s
+
+smoothSolver:  Solving for T, Initial residual = 0.000656541, Final residual = 3.68285e-10, No Iterations 1
+Time = 1.745s
+
+smoothSolver:  Solving for T, Initial residual = 0.000654656, Final residual = 3.67066e-10, No Iterations 1
+Time = 1.75s
+
+smoothSolver:  Solving for T, Initial residual = 0.000652782, Final residual = 3.65855e-10, No Iterations 1
+Time = 1.755s
+
+smoothSolver:  Solving for T, Initial residual = 0.000650919, Final residual = 3.64651e-10, No Iterations 1
+Time = 1.76s
+
+smoothSolver:  Solving for T, Initial residual = 0.000649066, Final residual = 3.63455e-10, No Iterations 1
+Time = 1.765s
+
+smoothSolver:  Solving for T, Initial residual = 0.000647224, Final residual = 3.62266e-10, No Iterations 1
+Time = 1.77s
+
+smoothSolver:  Solving for T, Initial residual = 0.000645392, Final residual = 3.61084e-10, No Iterations 1
+Time = 1.775s
+
+smoothSolver:  Solving for T, Initial residual = 0.000643571, Final residual = 3.5991e-10, No Iterations 1
+Time = 1.78s
+
+smoothSolver:  Solving for T, Initial residual = 0.00064176, Final residual = 3.58744e-10, No Iterations 1
+Time = 1.785s
+
+smoothSolver:  Solving for T, Initial residual = 0.000639959, Final residual = 3.57584e-10, No Iterations 1
+Time = 1.79s
+
+smoothSolver:  Solving for T, Initial residual = 0.000638168, Final residual = 3.56432e-10, No Iterations 1
+Time = 1.795s
+
+smoothSolver:  Solving for T, Initial residual = 0.000636387, Final residual = 3.55286e-10, No Iterations 1
+Time = 1.8s
+
+smoothSolver:  Solving for T, Initial residual = 0.000634616, Final residual = 3.54148e-10, No Iterations 1
+Time = 1.805s
+
+smoothSolver:  Solving for T, Initial residual = 0.000632855, Final residual = 3.53017e-10, No Iterations 1
+Time = 1.81s
+
+smoothSolver:  Solving for T, Initial residual = 0.000631103, Final residual = 3.51892e-10, No Iterations 1
+Time = 1.815s
+
+smoothSolver:  Solving for T, Initial residual = 0.000629361, Final residual = 3.50775e-10, No Iterations 1
+Time = 1.82s
+
+smoothSolver:  Solving for T, Initial residual = 0.000627629, Final residual = 3.49664e-10, No Iterations 1
+Time = 1.825s
+
+smoothSolver:  Solving for T, Initial residual = 0.000625906, Final residual = 3.4856e-10, No Iterations 1
+Time = 1.83s
+
+smoothSolver:  Solving for T, Initial residual = 0.000624193, Final residual = 3.47462e-10, No Iterations 1
+Time = 1.835s
+
+smoothSolver:  Solving for T, Initial residual = 0.000622489, Final residual = 3.46371e-10, No Iterations 1
+Time = 1.84s
+
+smoothSolver:  Solving for T, Initial residual = 0.000620795, Final residual = 3.45287e-10, No Iterations 1
+Time = 1.845s
+
+smoothSolver:  Solving for T, Initial residual = 0.000619109, Final residual = 3.4421e-10, No Iterations 1
+Time = 1.85s
+
+smoothSolver:  Solving for T, Initial residual = 0.000617433, Final residual = 3.43138e-10, No Iterations 1
+Time = 1.855s
+
+smoothSolver:  Solving for T, Initial residual = 0.000615766, Final residual = 3.42073e-10, No Iterations 1
+Time = 1.86s
+
+smoothSolver:  Solving for T, Initial residual = 0.000614107, Final residual = 3.41015e-10, No Iterations 1
+Time = 1.865s
+
+smoothSolver:  Solving for T, Initial residual = 0.000612458, Final residual = 3.39963e-10, No Iterations 1
+Time = 1.87s
+
+smoothSolver:  Solving for T, Initial residual = 0.000610818, Final residual = 3.38917e-10, No Iterations 1
+Time = 1.875s
+
+smoothSolver:  Solving for T, Initial residual = 0.000609186, Final residual = 3.37877e-10, No Iterations 1
+Time = 1.88s
+
+smoothSolver:  Solving for T, Initial residual = 0.000607563, Final residual = 3.36843e-10, No Iterations 1
+Time = 1.885s
+
+smoothSolver:  Solving for T, Initial residual = 0.000605948, Final residual = 3.35816e-10, No Iterations 1
+Time = 1.89s
+
+smoothSolver:  Solving for T, Initial residual = 0.000604342, Final residual = 3.34794e-10, No Iterations 1
+Time = 1.895s
+
+smoothSolver:  Solving for T, Initial residual = 0.000602745, Final residual = 3.33779e-10, No Iterations 1
+Time = 1.9s
+
+smoothSolver:  Solving for T, Initial residual = 0.000601156, Final residual = 3.32769e-10, No Iterations 1
+Time = 1.905s
+
+smoothSolver:  Solving for T, Initial residual = 0.000599575, Final residual = 3.31765e-10, No Iterations 1
+Time = 1.91s
+
+smoothSolver:  Solving for T, Initial residual = 0.000598003, Final residual = 3.30767e-10, No Iterations 1
+Time = 1.915s
+
+smoothSolver:  Solving for T, Initial residual = 0.000596439, Final residual = 3.29775e-10, No Iterations 1
+Time = 1.92s
+
+smoothSolver:  Solving for T, Initial residual = 0.000594883, Final residual = 3.28789e-10, No Iterations 1
+Time = 1.925s
+
+smoothSolver:  Solving for T, Initial residual = 0.000593335, Final residual = 3.27808e-10, No Iterations 1
+Time = 1.93s
+
+smoothSolver:  Solving for T, Initial residual = 0.000591795, Final residual = 3.26833e-10, No Iterations 1
+Time = 1.935s
+
+smoothSolver:  Solving for T, Initial residual = 0.000590263, Final residual = 3.25864e-10, No Iterations 1
+Time = 1.94s
+
+smoothSolver:  Solving for T, Initial residual = 0.000588739, Final residual = 3.249e-10, No Iterations 1
+Time = 1.945s
+
+smoothSolver:  Solving for T, Initial residual = 0.000587223, Final residual = 3.23942e-10, No Iterations 1
+Time = 1.95s
+
+smoothSolver:  Solving for T, Initial residual = 0.000585715, Final residual = 3.22989e-10, No Iterations 1
+Time = 1.955s
+
+smoothSolver:  Solving for T, Initial residual = 0.000584214, Final residual = 3.22042e-10, No Iterations 1
+Time = 1.96s
+
+smoothSolver:  Solving for T, Initial residual = 0.000582721, Final residual = 3.211e-10, No Iterations 1
+Time = 1.965s
+
+smoothSolver:  Solving for T, Initial residual = 0.000581236, Final residual = 3.20163e-10, No Iterations 1
+Time = 1.97s
+
+smoothSolver:  Solving for T, Initial residual = 0.000579758, Final residual = 3.19232e-10, No Iterations 1
+Time = 1.975s
+
+smoothSolver:  Solving for T, Initial residual = 0.000578288, Final residual = 3.18306e-10, No Iterations 1
+Time = 1.98s
+
+smoothSolver:  Solving for T, Initial residual = 0.000576825, Final residual = 3.17385e-10, No Iterations 1
+Time = 1.985s
+
+smoothSolver:  Solving for T, Initial residual = 0.00057537, Final residual = 3.1647e-10, No Iterations 1
+Time = 1.99s
+
+smoothSolver:  Solving for T, Initial residual = 0.000573921, Final residual = 3.15559e-10, No Iterations 1
+Time = 1.995s
+
+smoothSolver:  Solving for T, Initial residual = 0.000572481, Final residual = 3.14654e-10, No Iterations 1
+Time = 2s
+
+smoothSolver:  Solving for T, Initial residual = 0.000571047, Final residual = 3.13753e-10, No Iterations 1
+Time = 2.005s
+
+smoothSolver:  Solving for T, Initial residual = 0.00056962, Final residual = 3.12858e-10, No Iterations 1
+Time = 2.01s
+
+smoothSolver:  Solving for T, Initial residual = 0.000568201, Final residual = 3.11968e-10, No Iterations 1
+Time = 2.015s
+
+smoothSolver:  Solving for T, Initial residual = 0.000566789, Final residual = 3.11083e-10, No Iterations 1
+Time = 2.02s
+
+smoothSolver:  Solving for T, Initial residual = 0.000565384, Final residual = 3.10202e-10, No Iterations 1
+Time = 2.025s
+
+smoothSolver:  Solving for T, Initial residual = 0.000563985, Final residual = 3.09327e-10, No Iterations 1
+Time = 2.03s
+
+smoothSolver:  Solving for T, Initial residual = 0.000562594, Final residual = 3.08456e-10, No Iterations 1
+Time = 2.035s
+
+smoothSolver:  Solving for T, Initial residual = 0.000561209, Final residual = 3.0759e-10, No Iterations 1
+Time = 2.04s
+
+smoothSolver:  Solving for T, Initial residual = 0.000559831, Final residual = 3.06729e-10, No Iterations 1
+Time = 2.045s
+
+smoothSolver:  Solving for T, Initial residual = 0.00055846, Final residual = 3.05872e-10, No Iterations 1
+Time = 2.05s
+
+smoothSolver:  Solving for T, Initial residual = 0.000557096, Final residual = 3.0502e-10, No Iterations 1
+Time = 2.055s
+
+smoothSolver:  Solving for T, Initial residual = 0.000555738, Final residual = 3.04173e-10, No Iterations 1
+Time = 2.06s
+
+smoothSolver:  Solving for T, Initial residual = 0.000554387, Final residual = 3.03331e-10, No Iterations 1
+Time = 2.065s
+
+smoothSolver:  Solving for T, Initial residual = 0.000553043, Final residual = 3.02493e-10, No Iterations 1
+Time = 2.07s
+
+smoothSolver:  Solving for T, Initial residual = 0.000551705, Final residual = 3.0166e-10, No Iterations 1
+Time = 2.075s
+
+smoothSolver:  Solving for T, Initial residual = 0.000550373, Final residual = 3.00831e-10, No Iterations 1
+Time = 2.08s
+
+smoothSolver:  Solving for T, Initial residual = 0.000549048, Final residual = 3.00007e-10, No Iterations 1
+Time = 2.085s
+
+smoothSolver:  Solving for T, Initial residual = 0.000547729, Final residual = 2.99187e-10, No Iterations 1
+Time = 2.09s
+
+smoothSolver:  Solving for T, Initial residual = 0.000546416, Final residual = 2.98371e-10, No Iterations 1
+Time = 2.095s
+
+smoothSolver:  Solving for T, Initial residual = 0.00054511, Final residual = 2.9756e-10, No Iterations 1
+Time = 2.1s
+
+smoothSolver:  Solving for T, Initial residual = 0.00054381, Final residual = 2.96753e-10, No Iterations 1
+Time = 2.105s
+
+smoothSolver:  Solving for T, Initial residual = 0.000542516, Final residual = 2.95951e-10, No Iterations 1
+Time = 2.11s
+
+smoothSolver:  Solving for T, Initial residual = 0.000541229, Final residual = 2.95152e-10, No Iterations 1
+Time = 2.115s
+
+smoothSolver:  Solving for T, Initial residual = 0.000539947, Final residual = 2.94359e-10, No Iterations 1
+Time = 2.12s
+
+smoothSolver:  Solving for T, Initial residual = 0.000538671, Final residual = 2.93569e-10, No Iterations 1
+Time = 2.125s
+
+smoothSolver:  Solving for T, Initial residual = 0.000537402, Final residual = 2.92783e-10, No Iterations 1
+Time = 2.13s
+
+smoothSolver:  Solving for T, Initial residual = 0.000536138, Final residual = 2.92002e-10, No Iterations 1
+Time = 2.135s
+
+smoothSolver:  Solving for T, Initial residual = 0.000534881, Final residual = 2.91225e-10, No Iterations 1
+Time = 2.14s
+
+smoothSolver:  Solving for T, Initial residual = 0.000533629, Final residual = 2.90452e-10, No Iterations 1
+Time = 2.145s
+
+smoothSolver:  Solving for T, Initial residual = 0.000532383, Final residual = 2.89682e-10, No Iterations 1
+Time = 2.15s
+
+smoothSolver:  Solving for T, Initial residual = 0.000531143, Final residual = 2.88917e-10, No Iterations 1
+Time = 2.155s
+
+smoothSolver:  Solving for T, Initial residual = 0.000529908, Final residual = 2.88156e-10, No Iterations 1
+Time = 2.16s
+
+smoothSolver:  Solving for T, Initial residual = 0.00052868, Final residual = 2.87399e-10, No Iterations 1
+Time = 2.165s
+
+smoothSolver:  Solving for T, Initial residual = 0.000527457, Final residual = 2.86646e-10, No Iterations 1
+Time = 2.17s
+
+smoothSolver:  Solving for T, Initial residual = 0.00052624, Final residual = 2.85897e-10, No Iterations 1
+Time = 2.175s
+
+smoothSolver:  Solving for T, Initial residual = 0.000525028, Final residual = 2.85152e-10, No Iterations 1
+Time = 2.18s
+
+smoothSolver:  Solving for T, Initial residual = 0.000523822, Final residual = 2.8441e-10, No Iterations 1
+Time = 2.185s
+
+smoothSolver:  Solving for T, Initial residual = 0.000522621, Final residual = 2.83673e-10, No Iterations 1
+Time = 2.19s
+
+smoothSolver:  Solving for T, Initial residual = 0.000521426, Final residual = 2.82939e-10, No Iterations 1
+Time = 2.195s
+
+smoothSolver:  Solving for T, Initial residual = 0.000520236, Final residual = 2.82209e-10, No Iterations 1
+Time = 2.2s
+
+smoothSolver:  Solving for T, Initial residual = 0.000519052, Final residual = 2.81483e-10, No Iterations 1
+Time = 2.205s
+
+smoothSolver:  Solving for T, Initial residual = 0.000517873, Final residual = 2.8076e-10, No Iterations 1
+Time = 2.21s
+
+smoothSolver:  Solving for T, Initial residual = 0.0005167, Final residual = 2.80042e-10, No Iterations 1
+Time = 2.215s
+
+smoothSolver:  Solving for T, Initial residual = 0.000515531, Final residual = 2.79326e-10, No Iterations 1
+Time = 2.22s
+
+smoothSolver:  Solving for T, Initial residual = 0.000514368, Final residual = 2.78615e-10, No Iterations 1
+Time = 2.225s
+
+smoothSolver:  Solving for T, Initial residual = 0.000513211, Final residual = 2.77907e-10, No Iterations 1
+Time = 2.23s
+
+smoothSolver:  Solving for T, Initial residual = 0.000512058, Final residual = 2.77203e-10, No Iterations 1
+Time = 2.235s
+
+smoothSolver:  Solving for T, Initial residual = 0.000510911, Final residual = 2.76502e-10, No Iterations 1
+Time = 2.24s
+
+smoothSolver:  Solving for T, Initial residual = 0.000509768, Final residual = 2.75805e-10, No Iterations 1
+Time = 2.245s
+
+smoothSolver:  Solving for T, Initial residual = 0.000508631, Final residual = 2.75111e-10, No Iterations 1
+Time = 2.25s
+
+smoothSolver:  Solving for T, Initial residual = 0.000507499, Final residual = 2.74421e-10, No Iterations 1
+Time = 2.255s
+
+smoothSolver:  Solving for T, Initial residual = 0.000506372, Final residual = 2.73735e-10, No Iterations 1
+Time = 2.26s
+
+smoothSolver:  Solving for T, Initial residual = 0.00050525, Final residual = 2.73052e-10, No Iterations 1
+Time = 2.265s
+
+smoothSolver:  Solving for T, Initial residual = 0.000504133, Final residual = 2.72372e-10, No Iterations 1
+Time = 2.27s
+
+smoothSolver:  Solving for T, Initial residual = 0.000503021, Final residual = 2.71696e-10, No Iterations 1
+Time = 2.275s
+
+smoothSolver:  Solving for T, Initial residual = 0.000501913, Final residual = 2.71023e-10, No Iterations 1
+Time = 2.28s
+
+smoothSolver:  Solving for T, Initial residual = 0.000500811, Final residual = 2.70353e-10, No Iterations 1
+Time = 2.285s
+
+smoothSolver:  Solving for T, Initial residual = 0.000499713, Final residual = 2.69687e-10, No Iterations 1
+Time = 2.29s
+
+smoothSolver:  Solving for T, Initial residual = 0.00049862, Final residual = 2.69024e-10, No Iterations 1
+Time = 2.295s
+
+smoothSolver:  Solving for T, Initial residual = 0.000497532, Final residual = 2.68364e-10, No Iterations 1
+Time = 2.3s
+
+smoothSolver:  Solving for T, Initial residual = 0.000496449, Final residual = 2.67708e-10, No Iterations 1
+Time = 2.305s
+
+smoothSolver:  Solving for T, Initial residual = 0.00049537, Final residual = 2.67055e-10, No Iterations 1
+Time = 2.31s
+
+smoothSolver:  Solving for T, Initial residual = 0.000494296, Final residual = 2.66405e-10, No Iterations 1
+Time = 2.315s
+
+smoothSolver:  Solving for T, Initial residual = 0.000493227, Final residual = 2.65758e-10, No Iterations 1
+Time = 2.32s
+
+smoothSolver:  Solving for T, Initial residual = 0.000492162, Final residual = 2.65115e-10, No Iterations 1
+Time = 2.325s
+
+smoothSolver:  Solving for T, Initial residual = 0.000491102, Final residual = 2.64474e-10, No Iterations 1
+Time = 2.33s
+
+smoothSolver:  Solving for T, Initial residual = 0.000490047, Final residual = 2.63837e-10, No Iterations 1
+Time = 2.335s
+
+smoothSolver:  Solving for T, Initial residual = 0.000488996, Final residual = 2.63203e-10, No Iterations 1
+Time = 2.34s
+
+smoothSolver:  Solving for T, Initial residual = 0.000487949, Final residual = 2.62572e-10, No Iterations 1
+Time = 2.345s
+
+smoothSolver:  Solving for T, Initial residual = 0.000486907, Final residual = 2.61944e-10, No Iterations 1
+Time = 2.35s
+
+smoothSolver:  Solving for T, Initial residual = 0.00048587, Final residual = 2.61319e-10, No Iterations 1
+Time = 2.355s
+
+smoothSolver:  Solving for T, Initial residual = 0.000484836, Final residual = 2.60697e-10, No Iterations 1
+Time = 2.36s
+
+smoothSolver:  Solving for T, Initial residual = 0.000483808, Final residual = 2.60079e-10, No Iterations 1
+Time = 2.365s
+
+smoothSolver:  Solving for T, Initial residual = 0.000482783, Final residual = 2.59463e-10, No Iterations 1
+Time = 2.37s
+
+smoothSolver:  Solving for T, Initial residual = 0.000481763, Final residual = 2.5885e-10, No Iterations 1
+Time = 2.375s
+
+smoothSolver:  Solving for T, Initial residual = 0.000480747, Final residual = 2.5824e-10, No Iterations 1
+Time = 2.38s
+
+smoothSolver:  Solving for T, Initial residual = 0.000479736, Final residual = 2.57633e-10, No Iterations 1
+Time = 2.385s
+
+smoothSolver:  Solving for T, Initial residual = 0.000478728, Final residual = 2.57029e-10, No Iterations 1
+Time = 2.39s
+
+smoothSolver:  Solving for T, Initial residual = 0.000477725, Final residual = 2.56428e-10, No Iterations 1
+Time = 2.395s
+
+smoothSolver:  Solving for T, Initial residual = 0.000476726, Final residual = 2.55829e-10, No Iterations 1
+Time = 2.4s
+
+smoothSolver:  Solving for T, Initial residual = 0.000475732, Final residual = 2.55234e-10, No Iterations 1
+Time = 2.405s
+
+smoothSolver:  Solving for T, Initial residual = 0.000474741, Final residual = 2.54641e-10, No Iterations 1
+Time = 2.41s
+
+smoothSolver:  Solving for T, Initial residual = 0.000473755, Final residual = 2.54051e-10, No Iterations 1
+Time = 2.415s
+
+smoothSolver:  Solving for T, Initial residual = 0.000472772, Final residual = 2.53464e-10, No Iterations 1
+Time = 2.42s
+
+smoothSolver:  Solving for T, Initial residual = 0.000471794, Final residual = 2.5288e-10, No Iterations 1
+Time = 2.425s
+
+smoothSolver:  Solving for T, Initial residual = 0.000470819, Final residual = 2.52299e-10, No Iterations 1
+Time = 2.43s
+
+smoothSolver:  Solving for T, Initial residual = 0.000469849, Final residual = 2.5172e-10, No Iterations 1
+Time = 2.435s
+
+smoothSolver:  Solving for T, Initial residual = 0.000468883, Final residual = 2.51144e-10, No Iterations 1
+Time = 2.44s
+
+smoothSolver:  Solving for T, Initial residual = 0.000467921, Final residual = 2.50571e-10, No Iterations 1
+Time = 2.445s
+
+smoothSolver:  Solving for T, Initial residual = 0.000466962, Final residual = 2.5e-10, No Iterations 1
+Time = 2.45s
+
+smoothSolver:  Solving for T, Initial residual = 0.000466008, Final residual = 2.49432e-10, No Iterations 1
+Time = 2.455s
+
+smoothSolver:  Solving for T, Initial residual = 0.000465057, Final residual = 2.48867e-10, No Iterations 1
+Time = 2.46s
+
+smoothSolver:  Solving for T, Initial residual = 0.00046411, Final residual = 2.48304e-10, No Iterations 1
+Time = 2.465s
+
+smoothSolver:  Solving for T, Initial residual = 0.000463167, Final residual = 2.47744e-10, No Iterations 1
+Time = 2.47s
+
+smoothSolver:  Solving for T, Initial residual = 0.000462228, Final residual = 2.47187e-10, No Iterations 1
+Time = 2.475s
+
+smoothSolver:  Solving for T, Initial residual = 0.000461293, Final residual = 2.46632e-10, No Iterations 1
+Time = 2.48s
+
+smoothSolver:  Solving for T, Initial residual = 0.000460361, Final residual = 2.4608e-10, No Iterations 1
+Time = 2.485s
+
+smoothSolver:  Solving for T, Initial residual = 0.000459434, Final residual = 2.4553e-10, No Iterations 1
+Time = 2.49s
+
+smoothSolver:  Solving for T, Initial residual = 0.00045851, Final residual = 2.44983e-10, No Iterations 1
+Time = 2.495s
+
+smoothSolver:  Solving for T, Initial residual = 0.000457589, Final residual = 2.44438e-10, No Iterations 1
+Time = 2.5s
+
+smoothSolver:  Solving for T, Initial residual = 0.000456673, Final residual = 2.43896e-10, No Iterations 1
+Time = 2.505s
+
+smoothSolver:  Solving for T, Initial residual = 0.00045576, Final residual = 2.43357e-10, No Iterations 1
+Time = 2.51s
+
+smoothSolver:  Solving for T, Initial residual = 0.00045485, Final residual = 2.4282e-10, No Iterations 1
+Time = 2.515s
+
+smoothSolver:  Solving for T, Initial residual = 0.000453945, Final residual = 2.42285e-10, No Iterations 1
+Time = 2.52s
+
+smoothSolver:  Solving for T, Initial residual = 0.000453043, Final residual = 2.41753e-10, No Iterations 1
+Time = 2.525s
+
+smoothSolver:  Solving for T, Initial residual = 0.000452144, Final residual = 2.41223e-10, No Iterations 1
+Time = 2.53s
+
+smoothSolver:  Solving for T, Initial residual = 0.000451249, Final residual = 2.40695e-10, No Iterations 1
+Time = 2.535s
+
+smoothSolver:  Solving for T, Initial residual = 0.000450358, Final residual = 2.4017e-10, No Iterations 1
+Time = 2.54s
+
+smoothSolver:  Solving for T, Initial residual = 0.00044947, Final residual = 2.39648e-10, No Iterations 1
+Time = 2.545s
+
+smoothSolver:  Solving for T, Initial residual = 0.000448585, Final residual = 2.39128e-10, No Iterations 1
+Time = 2.55s
+
+smoothSolver:  Solving for T, Initial residual = 0.000447704, Final residual = 2.3861e-10, No Iterations 1
+Time = 2.555s
+
+smoothSolver:  Solving for T, Initial residual = 0.000446827, Final residual = 2.38094e-10, No Iterations 1
+Time = 2.56s
+
+smoothSolver:  Solving for T, Initial residual = 0.000445952, Final residual = 2.37581e-10, No Iterations 1
+Time = 2.565s
+
+smoothSolver:  Solving for T, Initial residual = 0.000445082, Final residual = 2.3707e-10, No Iterations 1
+Time = 2.57s
+
+smoothSolver:  Solving for T, Initial residual = 0.000444214, Final residual = 2.36562e-10, No Iterations 1
+Time = 2.575s
+
+smoothSolver:  Solving for T, Initial residual = 0.00044335, Final residual = 2.36055e-10, No Iterations 1
+Time = 2.58s
+
+smoothSolver:  Solving for T, Initial residual = 0.00044249, Final residual = 2.35551e-10, No Iterations 1
+Time = 2.585s
+
+smoothSolver:  Solving for T, Initial residual = 0.000441633, Final residual = 2.35049e-10, No Iterations 1
+Time = 2.59s
+
+smoothSolver:  Solving for T, Initial residual = 0.000440779, Final residual = 2.3455e-10, No Iterations 1
+Time = 2.595s
+
+smoothSolver:  Solving for T, Initial residual = 0.000439928, Final residual = 2.34053e-10, No Iterations 1
+Time = 2.6s
+
+smoothSolver:  Solving for T, Initial residual = 0.00043908, Final residual = 2.33557e-10, No Iterations 1
+Time = 2.605s
+
+smoothSolver:  Solving for T, Initial residual = 0.000438236, Final residual = 2.33064e-10, No Iterations 1
+Time = 2.61s
+
+smoothSolver:  Solving for T, Initial residual = 0.000437395, Final residual = 2.32574e-10, No Iterations 1
+Time = 2.615s
+
+smoothSolver:  Solving for T, Initial residual = 0.000436558, Final residual = 2.32085e-10, No Iterations 1
+Time = 2.62s
+
+smoothSolver:  Solving for T, Initial residual = 0.000435723, Final residual = 2.31599e-10, No Iterations 1
+Time = 2.625s
+
+smoothSolver:  Solving for T, Initial residual = 0.000434892, Final residual = 2.31115e-10, No Iterations 1
+Time = 2.63s
+
+smoothSolver:  Solving for T, Initial residual = 0.000434063, Final residual = 2.30632e-10, No Iterations 1
+Time = 2.635s
+
+smoothSolver:  Solving for T, Initial residual = 0.000433238, Final residual = 2.30152e-10, No Iterations 1
+Time = 2.64s
+
+smoothSolver:  Solving for T, Initial residual = 0.000432417, Final residual = 2.29674e-10, No Iterations 1
+Time = 2.645s
+
+smoothSolver:  Solving for T, Initial residual = 0.000431598, Final residual = 2.29199e-10, No Iterations 1
+Time = 2.65s
+
+smoothSolver:  Solving for T, Initial residual = 0.000430782, Final residual = 2.28725e-10, No Iterations 1
+Time = 2.655s
+
+smoothSolver:  Solving for T, Initial residual = 0.000429969, Final residual = 2.28253e-10, No Iterations 1
+Time = 2.66s
+
+smoothSolver:  Solving for T, Initial residual = 0.00042916, Final residual = 2.27784e-10, No Iterations 1
+Time = 2.665s
+
+smoothSolver:  Solving for T, Initial residual = 0.000428353, Final residual = 2.27316e-10, No Iterations 1
+Time = 2.67s
+
+smoothSolver:  Solving for T, Initial residual = 0.00042755, Final residual = 2.26851e-10, No Iterations 1
+Time = 2.675s
+
+smoothSolver:  Solving for T, Initial residual = 0.000426749, Final residual = 2.26387e-10, No Iterations 1
+Time = 2.68s
+
+smoothSolver:  Solving for T, Initial residual = 0.000425952, Final residual = 2.25926e-10, No Iterations 1
+Time = 2.685s
+
+smoothSolver:  Solving for T, Initial residual = 0.000425157, Final residual = 2.25466e-10, No Iterations 1
+Time = 2.69s
+
+smoothSolver:  Solving for T, Initial residual = 0.000424365, Final residual = 2.25009e-10, No Iterations 1
+Time = 2.695s
+
+smoothSolver:  Solving for T, Initial residual = 0.000423577, Final residual = 2.24553e-10, No Iterations 1
+Time = 2.7s
+
+smoothSolver:  Solving for T, Initial residual = 0.000422791, Final residual = 2.241e-10, No Iterations 1
+Time = 2.705s
+
+smoothSolver:  Solving for T, Initial residual = 0.000422008, Final residual = 2.23648e-10, No Iterations 1
+Time = 2.71s
+
+smoothSolver:  Solving for T, Initial residual = 0.000421228, Final residual = 2.23198e-10, No Iterations 1
+Time = 2.715s
+
+smoothSolver:  Solving for T, Initial residual = 0.000420451, Final residual = 2.22751e-10, No Iterations 1
+Time = 2.72s
+
+smoothSolver:  Solving for T, Initial residual = 0.000419677, Final residual = 2.22305e-10, No Iterations 1
+Time = 2.725s
+
+smoothSolver:  Solving for T, Initial residual = 0.000418905, Final residual = 2.21861e-10, No Iterations 1
+Time = 2.73s
+
+smoothSolver:  Solving for T, Initial residual = 0.000418137, Final residual = 2.21419e-10, No Iterations 1
+Time = 2.735s
+
+smoothSolver:  Solving for T, Initial residual = 0.000417371, Final residual = 2.20979e-10, No Iterations 1
+Time = 2.74s
+
+smoothSolver:  Solving for T, Initial residual = 0.000416608, Final residual = 2.2054e-10, No Iterations 1
+Time = 2.745s
+
+smoothSolver:  Solving for T, Initial residual = 0.000415848, Final residual = 2.20104e-10, No Iterations 1
+Time = 2.75s
+
+smoothSolver:  Solving for T, Initial residual = 0.00041509, Final residual = 2.19669e-10, No Iterations 1
+Time = 2.755s
+
+smoothSolver:  Solving for T, Initial residual = 0.000414336, Final residual = 2.19237e-10, No Iterations 1
+Time = 2.76s
+
+smoothSolver:  Solving for T, Initial residual = 0.000413584, Final residual = 2.18806e-10, No Iterations 1
+Time = 2.765s
+
+smoothSolver:  Solving for T, Initial residual = 0.000412834, Final residual = 2.18377e-10, No Iterations 1
+Time = 2.77s
+
+smoothSolver:  Solving for T, Initial residual = 0.000412088, Final residual = 2.17949e-10, No Iterations 1
+Time = 2.775s
+
+smoothSolver:  Solving for T, Initial residual = 0.000411344, Final residual = 2.17524e-10, No Iterations 1
+Time = 2.78s
+
+smoothSolver:  Solving for T, Initial residual = 0.000410603, Final residual = 2.171e-10, No Iterations 1
+Time = 2.785s
+
+smoothSolver:  Solving for T, Initial residual = 0.000409864, Final residual = 2.16678e-10, No Iterations 1
+Time = 2.79s
+
+smoothSolver:  Solving for T, Initial residual = 0.000409128, Final residual = 2.16258e-10, No Iterations 1
+Time = 2.795s
+
+smoothSolver:  Solving for T, Initial residual = 0.000408395, Final residual = 2.1584e-10, No Iterations 1
+Time = 2.8s
+
+smoothSolver:  Solving for T, Initial residual = 0.000407664, Final residual = 2.15423e-10, No Iterations 1
+Time = 2.805s
+
+smoothSolver:  Solving for T, Initial residual = 0.000406936, Final residual = 2.15008e-10, No Iterations 1
+Time = 2.81s
+
+smoothSolver:  Solving for T, Initial residual = 0.000406211, Final residual = 2.14595e-10, No Iterations 1
+Time = 2.815s
+
+smoothSolver:  Solving for T, Initial residual = 0.000405488, Final residual = 2.14183e-10, No Iterations 1
+Time = 2.82s
+
+smoothSolver:  Solving for T, Initial residual = 0.000404768, Final residual = 2.13773e-10, No Iterations 1
+Time = 2.825s
+
+smoothSolver:  Solving for T, Initial residual = 0.00040405, Final residual = 2.13365e-10, No Iterations 1
+Time = 2.83s
+
+smoothSolver:  Solving for T, Initial residual = 0.000403335, Final residual = 2.12959e-10, No Iterations 1
+Time = 2.835s
+
+smoothSolver:  Solving for T, Initial residual = 0.000402622, Final residual = 2.12554e-10, No Iterations 1
+Time = 2.84s
+
+smoothSolver:  Solving for T, Initial residual = 0.000401912, Final residual = 2.12151e-10, No Iterations 1
+Time = 2.845s
+
+smoothSolver:  Solving for T, Initial residual = 0.000401204, Final residual = 2.1175e-10, No Iterations 1
+Time = 2.85s
+
+smoothSolver:  Solving for T, Initial residual = 0.000400499, Final residual = 2.1135e-10, No Iterations 1
+Time = 2.855s
+
+smoothSolver:  Solving for T, Initial residual = 0.000399796, Final residual = 2.10952e-10, No Iterations 1
+Time = 2.86s
+
+smoothSolver:  Solving for T, Initial residual = 0.000399096, Final residual = 2.10555e-10, No Iterations 1
+Time = 2.865s
+
+smoothSolver:  Solving for T, Initial residual = 0.000398398, Final residual = 2.1016e-10, No Iterations 1
+Time = 2.87s
+
+smoothSolver:  Solving for T, Initial residual = 0.000397703, Final residual = 2.09767e-10, No Iterations 1
+Time = 2.875s
+
+smoothSolver:  Solving for T, Initial residual = 0.00039701, Final residual = 2.09375e-10, No Iterations 1
+Time = 2.88s
+
+smoothSolver:  Solving for T, Initial residual = 0.000396319, Final residual = 2.08985e-10, No Iterations 1
+Time = 2.885s
+
+smoothSolver:  Solving for T, Initial residual = 0.000395631, Final residual = 2.08597e-10, No Iterations 1
+Time = 2.89s
+
+smoothSolver:  Solving for T, Initial residual = 0.000394945, Final residual = 2.0821e-10, No Iterations 1
+Time = 2.895s
+
+smoothSolver:  Solving for T, Initial residual = 0.000394261, Final residual = 2.07825e-10, No Iterations 1
+Time = 2.9s
+
+smoothSolver:  Solving for T, Initial residual = 0.00039358, Final residual = 2.07441e-10, No Iterations 1
+Time = 2.905s
+
+smoothSolver:  Solving for T, Initial residual = 0.000392902, Final residual = 2.07059e-10, No Iterations 1
+Time = 2.91s
+
+smoothSolver:  Solving for T, Initial residual = 0.000392225, Final residual = 2.06678e-10, No Iterations 1
+Time = 2.915s
+
+smoothSolver:  Solving for T, Initial residual = 0.000391551, Final residual = 2.06299e-10, No Iterations 1
+Time = 2.92s
+
+smoothSolver:  Solving for T, Initial residual = 0.000390879, Final residual = 2.05921e-10, No Iterations 1
+Time = 2.925s
+
+smoothSolver:  Solving for T, Initial residual = 0.00039021, Final residual = 2.05545e-10, No Iterations 1
+Time = 2.93s
+
+smoothSolver:  Solving for T, Initial residual = 0.000389542, Final residual = 2.0517e-10, No Iterations 1
+Time = 2.935s
+
+smoothSolver:  Solving for T, Initial residual = 0.000388877, Final residual = 2.04797e-10, No Iterations 1
+Time = 2.94s
+
+smoothSolver:  Solving for T, Initial residual = 0.000388215, Final residual = 2.04426e-10, No Iterations 1
+Time = 2.945s
+
+smoothSolver:  Solving for T, Initial residual = 0.000387554, Final residual = 2.04055e-10, No Iterations 1
+Time = 2.95s
+
+smoothSolver:  Solving for T, Initial residual = 0.000386896, Final residual = 2.03687e-10, No Iterations 1
+Time = 2.955s
+
+smoothSolver:  Solving for T, Initial residual = 0.00038624, Final residual = 2.0332e-10, No Iterations 1
+Time = 2.96s
+
+smoothSolver:  Solving for T, Initial residual = 0.000385586, Final residual = 2.02954e-10, No Iterations 1
+Time = 2.965s
+
+smoothSolver:  Solving for T, Initial residual = 0.000384935, Final residual = 2.0259e-10, No Iterations 1
+Time = 2.97s
+
+smoothSolver:  Solving for T, Initial residual = 0.000384285, Final residual = 2.02227e-10, No Iterations 1
+Time = 2.975s
+
+smoothSolver:  Solving for T, Initial residual = 0.000383638, Final residual = 2.01865e-10, No Iterations 1
+Time = 2.98s
+
+smoothSolver:  Solving for T, Initial residual = 0.000382993, Final residual = 2.01505e-10, No Iterations 1
+Time = 2.985s
+
+smoothSolver:  Solving for T, Initial residual = 0.00038235, Final residual = 2.01147e-10, No Iterations 1
+Time = 2.99s
+
+smoothSolver:  Solving for T, Initial residual = 0.000381709, Final residual = 2.0079e-10, No Iterations 1
+Time = 2.995s
+
+smoothSolver:  Solving for T, Initial residual = 0.000381071, Final residual = 2.00434e-10, No Iterations 1
+Time = 3s
+
+smoothSolver:  Solving for T, Initial residual = 0.000380434, Final residual = 2.00079e-10, No Iterations 1
+Time = 3.005s
+
+smoothSolver:  Solving for T, Initial residual = 0.0003798, Final residual = 1.99726e-10, No Iterations 1
+Time = 3.01s
+
+smoothSolver:  Solving for T, Initial residual = 0.000379168, Final residual = 1.99375e-10, No Iterations 1
+Time = 3.015s
+
+smoothSolver:  Solving for T, Initial residual = 0.000378537, Final residual = 1.99025e-10, No Iterations 1
+Time = 3.02s
+
+smoothSolver:  Solving for T, Initial residual = 0.000377909, Final residual = 1.98676e-10, No Iterations 1
+Time = 3.025s
+
+smoothSolver:  Solving for T, Initial residual = 0.000377283, Final residual = 1.98328e-10, No Iterations 1
+Time = 3.03s
+
+smoothSolver:  Solving for T, Initial residual = 0.000376659, Final residual = 1.97982e-10, No Iterations 1
+Time = 3.035s
+
+smoothSolver:  Solving for T, Initial residual = 0.000376038, Final residual = 1.97637e-10, No Iterations 1
+Time = 3.04s
+
+smoothSolver:  Solving for T, Initial residual = 0.000375418, Final residual = 1.97294e-10, No Iterations 1
+Time = 3.045s
+
+smoothSolver:  Solving for T, Initial residual = 0.0003748, Final residual = 1.96952e-10, No Iterations 1
+Time = 3.05s
+
+smoothSolver:  Solving for T, Initial residual = 0.000374184, Final residual = 1.96611e-10, No Iterations 1
+Time = 3.055s
+
+smoothSolver:  Solving for T, Initial residual = 0.00037357, Final residual = 1.96271e-10, No Iterations 1
+Time = 3.06s
+
+smoothSolver:  Solving for T, Initial residual = 0.000372959, Final residual = 1.95933e-10, No Iterations 1
+Time = 3.065s
+
+smoothSolver:  Solving for T, Initial residual = 0.000372349, Final residual = 1.95596e-10, No Iterations 1
+Time = 3.07s
+
+smoothSolver:  Solving for T, Initial residual = 0.000371741, Final residual = 1.95261e-10, No Iterations 1
+Time = 3.075s
+
+smoothSolver:  Solving for T, Initial residual = 0.000371135, Final residual = 1.94926e-10, No Iterations 1
+Time = 3.08s
+
+smoothSolver:  Solving for T, Initial residual = 0.000370531, Final residual = 1.94593e-10, No Iterations 1
+Time = 3.085s
+
+smoothSolver:  Solving for T, Initial residual = 0.000369929, Final residual = 1.94261e-10, No Iterations 1
+Time = 3.09s
+
+smoothSolver:  Solving for T, Initial residual = 0.000369329, Final residual = 1.93931e-10, No Iterations 1
+Time = 3.095s
+
+smoothSolver:  Solving for T, Initial residual = 0.000368731, Final residual = 1.93602e-10, No Iterations 1
+Time = 3.1s
+
+smoothSolver:  Solving for T, Initial residual = 0.000368135, Final residual = 1.93274e-10, No Iterations 1
+Time = 3.105s
+
+smoothSolver:  Solving for T, Initial residual = 0.000367541, Final residual = 1.92947e-10, No Iterations 1
+Time = 3.11s
+
+smoothSolver:  Solving for T, Initial residual = 0.000366949, Final residual = 1.92622e-10, No Iterations 1
+Time = 3.115s
+
+smoothSolver:  Solving for T, Initial residual = 0.000366358, Final residual = 1.92297e-10, No Iterations 1
+Time = 3.12s
+
+smoothSolver:  Solving for T, Initial residual = 0.00036577, Final residual = 1.91974e-10, No Iterations 1
+Time = 3.125s
+
+smoothSolver:  Solving for T, Initial residual = 0.000365183, Final residual = 1.91653e-10, No Iterations 1
+Time = 3.13s
+
+smoothSolver:  Solving for T, Initial residual = 0.000364599, Final residual = 1.91332e-10, No Iterations 1
+Time = 3.135s
+
+smoothSolver:  Solving for T, Initial residual = 0.000364016, Final residual = 1.91013e-10, No Iterations 1
+Time = 3.14s
+
+smoothSolver:  Solving for T, Initial residual = 0.000363435, Final residual = 1.90694e-10, No Iterations 1
+Time = 3.145s
+
+smoothSolver:  Solving for T, Initial residual = 0.000362856, Final residual = 1.90377e-10, No Iterations 1
+Time = 3.15s
+
+smoothSolver:  Solving for T, Initial residual = 0.000362278, Final residual = 1.90062e-10, No Iterations 1
+Time = 3.155s
+
+smoothSolver:  Solving for T, Initial residual = 0.000361703, Final residual = 1.89747e-10, No Iterations 1
+Time = 3.16s
+
+smoothSolver:  Solving for T, Initial residual = 0.000361129, Final residual = 1.89434e-10, No Iterations 1
+Time = 3.165s
+
+smoothSolver:  Solving for T, Initial residual = 0.000360557, Final residual = 1.89121e-10, No Iterations 1
+Time = 3.17s
+
+smoothSolver:  Solving for T, Initial residual = 0.000359987, Final residual = 1.8881e-10, No Iterations 1
+Time = 3.175s
+
+smoothSolver:  Solving for T, Initial residual = 0.000359419, Final residual = 1.885e-10, No Iterations 1
+Time = 3.18s
+
+smoothSolver:  Solving for T, Initial residual = 0.000358852, Final residual = 1.88192e-10, No Iterations 1
+Time = 3.185s
+
+smoothSolver:  Solving for T, Initial residual = 0.000358288, Final residual = 1.87884e-10, No Iterations 1
+Time = 3.19s
+
+smoothSolver:  Solving for T, Initial residual = 0.000357725, Final residual = 1.87577e-10, No Iterations 1
+Time = 3.195s
+
+smoothSolver:  Solving for T, Initial residual = 0.000357163, Final residual = 1.87272e-10, No Iterations 1
+Time = 3.2s
+
+smoothSolver:  Solving for T, Initial residual = 0.000356604, Final residual = 1.86968e-10, No Iterations 1
+Time = 3.205s
+
+smoothSolver:  Solving for T, Initial residual = 0.000356046, Final residual = 1.86665e-10, No Iterations 1
+Time = 3.21s
+
+smoothSolver:  Solving for T, Initial residual = 0.00035549, Final residual = 1.86363e-10, No Iterations 1
+Time = 3.215s
+
+smoothSolver:  Solving for T, Initial residual = 0.000354936, Final residual = 1.86062e-10, No Iterations 1
+Time = 3.22s
+
+smoothSolver:  Solving for T, Initial residual = 0.000354383, Final residual = 1.85762e-10, No Iterations 1
+Time = 3.225s
+
+smoothSolver:  Solving for T, Initial residual = 0.000353833, Final residual = 1.85464e-10, No Iterations 1
+Time = 3.23s
+
+smoothSolver:  Solving for T, Initial residual = 0.000353283, Final residual = 1.85166e-10, No Iterations 1
+Time = 3.235s
+
+smoothSolver:  Solving for T, Initial residual = 0.000352736, Final residual = 1.8487e-10, No Iterations 1
+Time = 3.24s
+
+smoothSolver:  Solving for T, Initial residual = 0.00035219, Final residual = 1.84574e-10, No Iterations 1
+Time = 3.245s
+
+smoothSolver:  Solving for T, Initial residual = 0.000351646, Final residual = 1.8428e-10, No Iterations 1
+Time = 3.25s
+
+smoothSolver:  Solving for T, Initial residual = 0.000351104, Final residual = 1.83987e-10, No Iterations 1
+Time = 3.255s
+
+smoothSolver:  Solving for T, Initial residual = 0.000350563, Final residual = 1.83694e-10, No Iterations 1
+Time = 3.26s
+
+smoothSolver:  Solving for T, Initial residual = 0.000350024, Final residual = 1.83403e-10, No Iterations 1
+Time = 3.265s
+
+smoothSolver:  Solving for T, Initial residual = 0.000349487, Final residual = 1.83113e-10, No Iterations 1
+Time = 3.27s
+
+smoothSolver:  Solving for T, Initial residual = 0.000348951, Final residual = 1.82824e-10, No Iterations 1
+Time = 3.275s
+
+smoothSolver:  Solving for T, Initial residual = 0.000348417, Final residual = 1.82536e-10, No Iterations 1
+Time = 3.28s
+
+smoothSolver:  Solving for T, Initial residual = 0.000347884, Final residual = 1.8225e-10, No Iterations 1
+Time = 3.285s
+
+smoothSolver:  Solving for T, Initial residual = 0.000347353, Final residual = 1.81964e-10, No Iterations 1
+Time = 3.29s
+
+smoothSolver:  Solving for T, Initial residual = 0.000346824, Final residual = 1.81679e-10, No Iterations 1
+Time = 3.295s
+
+smoothSolver:  Solving for T, Initial residual = 0.000346296, Final residual = 1.81395e-10, No Iterations 1
+Time = 3.3s
+
+smoothSolver:  Solving for T, Initial residual = 0.00034577, Final residual = 1.81112e-10, No Iterations 1
+Time = 3.305s
+
+smoothSolver:  Solving for T, Initial residual = 0.000345245, Final residual = 1.80831e-10, No Iterations 1
+Time = 3.31s
+
+smoothSolver:  Solving for T, Initial residual = 0.000344723, Final residual = 1.8055e-10, No Iterations 1
+Time = 3.315s
+
+smoothSolver:  Solving for T, Initial residual = 0.000344201, Final residual = 1.8027e-10, No Iterations 1
+Time = 3.32s
+
+smoothSolver:  Solving for T, Initial residual = 0.000343681, Final residual = 1.79991e-10, No Iterations 1
+Time = 3.325s
+
+smoothSolver:  Solving for T, Initial residual = 0.000343163, Final residual = 1.79713e-10, No Iterations 1
+Time = 3.33s
+
+smoothSolver:  Solving for T, Initial residual = 0.000342646, Final residual = 1.79437e-10, No Iterations 1
+Time = 3.335s
+
+smoothSolver:  Solving for T, Initial residual = 0.000342131, Final residual = 1.79161e-10, No Iterations 1
+Time = 3.34s
+
+smoothSolver:  Solving for T, Initial residual = 0.000341617, Final residual = 1.78886e-10, No Iterations 1
+Time = 3.345s
+
+smoothSolver:  Solving for T, Initial residual = 0.000341105, Final residual = 1.78612e-10, No Iterations 1
+Time = 3.35s
+
+smoothSolver:  Solving for T, Initial residual = 0.000340595, Final residual = 1.78339e-10, No Iterations 1
+Time = 3.355s
+
+smoothSolver:  Solving for T, Initial residual = 0.000340086, Final residual = 1.78067e-10, No Iterations 1
+Time = 3.36s
+
+smoothSolver:  Solving for T, Initial residual = 0.000339578, Final residual = 1.77797e-10, No Iterations 1
+Time = 3.365s
+
+smoothSolver:  Solving for T, Initial residual = 0.000339072, Final residual = 1.77527e-10, No Iterations 1
+Time = 3.37s
+
+smoothSolver:  Solving for T, Initial residual = 0.000338568, Final residual = 1.77258e-10, No Iterations 1
+Time = 3.375s
+
+smoothSolver:  Solving for T, Initial residual = 0.000338065, Final residual = 1.7699e-10, No Iterations 1
+Time = 3.38s
+
+smoothSolver:  Solving for T, Initial residual = 0.000337563, Final residual = 1.76722e-10, No Iterations 1
+Time = 3.385s
+
+smoothSolver:  Solving for T, Initial residual = 0.000337063, Final residual = 1.76456e-10, No Iterations 1
+Time = 3.39s
+
+smoothSolver:  Solving for T, Initial residual = 0.000336564, Final residual = 1.76191e-10, No Iterations 1
+Time = 3.395s
+
+smoothSolver:  Solving for T, Initial residual = 0.000336067, Final residual = 1.75927e-10, No Iterations 1
+Time = 3.4s
+
+smoothSolver:  Solving for T, Initial residual = 0.000335571, Final residual = 1.75663e-10, No Iterations 1
+Time = 3.405s
+
+smoothSolver:  Solving for T, Initial residual = 0.000335077, Final residual = 1.75401e-10, No Iterations 1
+Time = 3.41s
+
+smoothSolver:  Solving for T, Initial residual = 0.000334584, Final residual = 1.75139e-10, No Iterations 1
+Time = 3.415s
+
+smoothSolver:  Solving for T, Initial residual = 0.000334093, Final residual = 1.74879e-10, No Iterations 1
+Time = 3.42s
+
+smoothSolver:  Solving for T, Initial residual = 0.000333603, Final residual = 1.74619e-10, No Iterations 1
+Time = 3.425s
+
+smoothSolver:  Solving for T, Initial residual = 0.000333115, Final residual = 1.7436e-10, No Iterations 1
+Time = 3.43s
+
+smoothSolver:  Solving for T, Initial residual = 0.000332627, Final residual = 1.74102e-10, No Iterations 1
+Time = 3.435s
+
+smoothSolver:  Solving for T, Initial residual = 0.000332142, Final residual = 1.73845e-10, No Iterations 1
+Time = 3.44s
+
+smoothSolver:  Solving for T, Initial residual = 0.000331658, Final residual = 1.73589e-10, No Iterations 1
+Time = 3.445s
+
+smoothSolver:  Solving for T, Initial residual = 0.000331175, Final residual = 1.73334e-10, No Iterations 1
+Time = 3.45s
+
+smoothSolver:  Solving for T, Initial residual = 0.000330693, Final residual = 1.73079e-10, No Iterations 1
+Time = 3.455s
+
+smoothSolver:  Solving for T, Initial residual = 0.000330213, Final residual = 1.72826e-10, No Iterations 1
+Time = 3.46s
+
+smoothSolver:  Solving for T, Initial residual = 0.000329734, Final residual = 1.72573e-10, No Iterations 1
+Time = 3.465s
+
+smoothSolver:  Solving for T, Initial residual = 0.000329257, Final residual = 1.72321e-10, No Iterations 1
+Time = 3.47s
+
+smoothSolver:  Solving for T, Initial residual = 0.000328781, Final residual = 1.7207e-10, No Iterations 1
+Time = 3.475s
+
+smoothSolver:  Solving for T, Initial residual = 0.000328307, Final residual = 1.7182e-10, No Iterations 1
+Time = 3.48s
+
+smoothSolver:  Solving for T, Initial residual = 0.000327833, Final residual = 1.71571e-10, No Iterations 1
+Time = 3.485s
+
+smoothSolver:  Solving for T, Initial residual = 0.000327361, Final residual = 1.71323e-10, No Iterations 1
+Time = 3.49s
+
+smoothSolver:  Solving for T, Initial residual = 0.000326891, Final residual = 1.71075e-10, No Iterations 1
+Time = 3.495s
+
+smoothSolver:  Solving for T, Initial residual = 0.000326422, Final residual = 1.70829e-10, No Iterations 1
+Time = 3.5s
+
+smoothSolver:  Solving for T, Initial residual = 0.000325954, Final residual = 1.70583e-10, No Iterations 1
+Time = 3.505s
+
+smoothSolver:  Solving for T, Initial residual = 0.000325487, Final residual = 1.70338e-10, No Iterations 1
+Time = 3.51s
+
+smoothSolver:  Solving for T, Initial residual = 0.000325022, Final residual = 1.70094e-10, No Iterations 1
+Time = 3.515s
+
+smoothSolver:  Solving for T, Initial residual = 0.000324558, Final residual = 1.69851e-10, No Iterations 1
+Time = 3.52s
+
+smoothSolver:  Solving for T, Initial residual = 0.000324096, Final residual = 1.69608e-10, No Iterations 1
+Time = 3.525s
+
+smoothSolver:  Solving for T, Initial residual = 0.000323634, Final residual = 1.69366e-10, No Iterations 1
+Time = 3.53s
+
+smoothSolver:  Solving for T, Initial residual = 0.000323175, Final residual = 1.69126e-10, No Iterations 1
+Time = 3.535s
+
+smoothSolver:  Solving for T, Initial residual = 0.000322716, Final residual = 1.68886e-10, No Iterations 1
+Time = 3.54s
+
+smoothSolver:  Solving for T, Initial residual = 0.000322258, Final residual = 1.68646e-10, No Iterations 1
+Time = 3.545s
+
+smoothSolver:  Solving for T, Initial residual = 0.000321802, Final residual = 1.68408e-10, No Iterations 1
+Time = 3.55s
+
+smoothSolver:  Solving for T, Initial residual = 0.000321348, Final residual = 1.6817e-10, No Iterations 1
+Time = 3.555s
+
+smoothSolver:  Solving for T, Initial residual = 0.000320894, Final residual = 1.67933e-10, No Iterations 1
+Time = 3.56s
+
+smoothSolver:  Solving for T, Initial residual = 0.000320442, Final residual = 1.67697e-10, No Iterations 1
+Time = 3.565s
+
+smoothSolver:  Solving for T, Initial residual = 0.000319991, Final residual = 1.67462e-10, No Iterations 1
+Time = 3.57s
+
+smoothSolver:  Solving for T, Initial residual = 0.000319541, Final residual = 1.67228e-10, No Iterations 1
+Time = 3.575s
+
+smoothSolver:  Solving for T, Initial residual = 0.000319093, Final residual = 1.66994e-10, No Iterations 1
+Time = 3.58s
+
+smoothSolver:  Solving for T, Initial residual = 0.000318645, Final residual = 1.66761e-10, No Iterations 1
+Time = 3.585s
+
+smoothSolver:  Solving for T, Initial residual = 0.000318199, Final residual = 1.66529e-10, No Iterations 1
+Time = 3.59s
+
+smoothSolver:  Solving for T, Initial residual = 0.000317755, Final residual = 1.66298e-10, No Iterations 1
+Time = 3.595s
+
+smoothSolver:  Solving for T, Initial residual = 0.000317311, Final residual = 1.66067e-10, No Iterations 1
+Time = 3.6s
+
+smoothSolver:  Solving for T, Initial residual = 0.000316869, Final residual = 1.65837e-10, No Iterations 1
+Time = 3.605s
+
+smoothSolver:  Solving for T, Initial residual = 0.000316428, Final residual = 1.65608e-10, No Iterations 1
+Time = 3.61s
+
+smoothSolver:  Solving for T, Initial residual = 0.000315988, Final residual = 1.6538e-10, No Iterations 1
+Time = 3.615s
+
+smoothSolver:  Solving for T, Initial residual = 0.000315549, Final residual = 1.65153e-10, No Iterations 1
+Time = 3.62s
+
+smoothSolver:  Solving for T, Initial residual = 0.000315112, Final residual = 1.64926e-10, No Iterations 1
+Time = 3.625s
+
+smoothSolver:  Solving for T, Initial residual = 0.000314675, Final residual = 1.647e-10, No Iterations 1
+Time = 3.63s
+
+smoothSolver:  Solving for T, Initial residual = 0.00031424, Final residual = 1.64474e-10, No Iterations 1
+Time = 3.635s
+
+smoothSolver:  Solving for T, Initial residual = 0.000313807, Final residual = 1.6425e-10, No Iterations 1
+Time = 3.64s
+
+smoothSolver:  Solving for T, Initial residual = 0.000313374, Final residual = 1.64026e-10, No Iterations 1
+Time = 3.645s
+
+smoothSolver:  Solving for T, Initial residual = 0.000312942, Final residual = 1.63803e-10, No Iterations 1
+Time = 3.65s
+
+smoothSolver:  Solving for T, Initial residual = 0.000312512, Final residual = 1.63581e-10, No Iterations 1
+Time = 3.655s
+
+smoothSolver:  Solving for T, Initial residual = 0.000312083, Final residual = 1.63359e-10, No Iterations 1
+Time = 3.66s
+
+smoothSolver:  Solving for T, Initial residual = 0.000311655, Final residual = 1.63138e-10, No Iterations 1
+Time = 3.665s
+
+smoothSolver:  Solving for T, Initial residual = 0.000311228, Final residual = 1.62918e-10, No Iterations 1
+Time = 3.67s
+
+smoothSolver:  Solving for T, Initial residual = 0.000310802, Final residual = 1.62698e-10, No Iterations 1
+Time = 3.675s
+
+smoothSolver:  Solving for T, Initial residual = 0.000310378, Final residual = 1.6248e-10, No Iterations 1
+Time = 3.68s
+
+smoothSolver:  Solving for T, Initial residual = 0.000309955, Final residual = 1.62262e-10, No Iterations 1
+Time = 3.685s
+
+smoothSolver:  Solving for T, Initial residual = 0.000309532, Final residual = 1.62044e-10, No Iterations 1
+Time = 3.69s
+
+smoothSolver:  Solving for T, Initial residual = 0.000309111, Final residual = 1.61828e-10, No Iterations 1
+Time = 3.695s
+
+smoothSolver:  Solving for T, Initial residual = 0.000308691, Final residual = 1.61612e-10, No Iterations 1
+Time = 3.7s
+
+smoothSolver:  Solving for T, Initial residual = 0.000308272, Final residual = 1.61397e-10, No Iterations 1
+Time = 3.705s
+
+smoothSolver:  Solving for T, Initial residual = 0.000307855, Final residual = 1.61182e-10, No Iterations 1
+Time = 3.71s
+
+smoothSolver:  Solving for T, Initial residual = 0.000307438, Final residual = 1.60968e-10, No Iterations 1
+Time = 3.715s
+
+smoothSolver:  Solving for T, Initial residual = 0.000307023, Final residual = 1.60755e-10, No Iterations 1
+Time = 3.72s
+
+smoothSolver:  Solving for T, Initial residual = 0.000306608, Final residual = 1.60542e-10, No Iterations 1
+Time = 3.725s
+
+smoothSolver:  Solving for T, Initial residual = 0.000306195, Final residual = 1.60331e-10, No Iterations 1
+Time = 3.73s
+
+smoothSolver:  Solving for T, Initial residual = 0.000305783, Final residual = 1.60119e-10, No Iterations 1
+Time = 3.735s
+
+smoothSolver:  Solving for T, Initial residual = 0.000305372, Final residual = 1.59909e-10, No Iterations 1
+Time = 3.74s
+
+smoothSolver:  Solving for T, Initial residual = 0.000304962, Final residual = 1.59699e-10, No Iterations 1
+Time = 3.745s
+
+smoothSolver:  Solving for T, Initial residual = 0.000304553, Final residual = 1.5949e-10, No Iterations 1
+Time = 3.75s
+
+smoothSolver:  Solving for T, Initial residual = 0.000304145, Final residual = 1.59282e-10, No Iterations 1
+Time = 3.755s
+
+smoothSolver:  Solving for T, Initial residual = 0.000303738, Final residual = 1.59074e-10, No Iterations 1
+Time = 3.76s
+
+smoothSolver:  Solving for T, Initial residual = 0.000303333, Final residual = 1.58867e-10, No Iterations 1
+Time = 3.765s
+
+smoothSolver:  Solving for T, Initial residual = 0.000302928, Final residual = 1.5866e-10, No Iterations 1
+Time = 3.77s
+
+smoothSolver:  Solving for T, Initial residual = 0.000302525, Final residual = 1.58455e-10, No Iterations 1
+Time = 3.775s
+
+smoothSolver:  Solving for T, Initial residual = 0.000302122, Final residual = 1.58249e-10, No Iterations 1
+Time = 3.78s
+
+smoothSolver:  Solving for T, Initial residual = 0.000301721, Final residual = 1.58045e-10, No Iterations 1
+Time = 3.785s
+
+smoothSolver:  Solving for T, Initial residual = 0.000301321, Final residual = 1.57841e-10, No Iterations 1
+Time = 3.79s
+
+smoothSolver:  Solving for T, Initial residual = 0.000300921, Final residual = 1.57638e-10, No Iterations 1
+Time = 3.795s
+
+smoothSolver:  Solving for T, Initial residual = 0.000300523, Final residual = 1.57435e-10, No Iterations 1
+Time = 3.8s
+
+smoothSolver:  Solving for T, Initial residual = 0.000300126, Final residual = 1.57233e-10, No Iterations 1
+Time = 3.805s
+
+smoothSolver:  Solving for T, Initial residual = 0.00029973, Final residual = 1.57032e-10, No Iterations 1
+Time = 3.81s
+
+smoothSolver:  Solving for T, Initial residual = 0.000299335, Final residual = 1.56831e-10, No Iterations 1
+Time = 3.815s
+
+smoothSolver:  Solving for T, Initial residual = 0.00029894, Final residual = 1.56631e-10, No Iterations 1
+Time = 3.82s
+
+smoothSolver:  Solving for T, Initial residual = 0.000298547, Final residual = 1.56432e-10, No Iterations 1
+Time = 3.825s
+
+smoothSolver:  Solving for T, Initial residual = 0.000298155, Final residual = 1.56233e-10, No Iterations 1
+Time = 3.83s
+
+smoothSolver:  Solving for T, Initial residual = 0.000297764, Final residual = 1.56035e-10, No Iterations 1
+Time = 3.835s
+
+smoothSolver:  Solving for T, Initial residual = 0.000297374, Final residual = 1.55837e-10, No Iterations 1
+Time = 3.84s
+
+smoothSolver:  Solving for T, Initial residual = 0.000296985, Final residual = 1.5564e-10, No Iterations 1
+Time = 3.845s
+
+smoothSolver:  Solving for T, Initial residual = 0.000296597, Final residual = 1.55444e-10, No Iterations 1
+Time = 3.85s
+
+smoothSolver:  Solving for T, Initial residual = 0.00029621, Final residual = 1.55248e-10, No Iterations 1
+Time = 3.855s
+
+smoothSolver:  Solving for T, Initial residual = 0.000295824, Final residual = 1.55053e-10, No Iterations 1
+Time = 3.86s
+
+smoothSolver:  Solving for T, Initial residual = 0.000295439, Final residual = 1.54859e-10, No Iterations 1
+Time = 3.865s
+
+smoothSolver:  Solving for T, Initial residual = 0.000295055, Final residual = 1.54665e-10, No Iterations 1
+Time = 3.87s
+
+smoothSolver:  Solving for T, Initial residual = 0.000294672, Final residual = 1.54471e-10, No Iterations 1
+Time = 3.875s
+
+smoothSolver:  Solving for T, Initial residual = 0.00029429, Final residual = 1.54279e-10, No Iterations 1
+Time = 3.88s
+
+smoothSolver:  Solving for T, Initial residual = 0.000293909, Final residual = 1.54087e-10, No Iterations 1
+Time = 3.885s
+
+smoothSolver:  Solving for T, Initial residual = 0.000293529, Final residual = 1.53895e-10, No Iterations 1
+Time = 3.89s
+
+smoothSolver:  Solving for T, Initial residual = 0.00029315, Final residual = 1.53704e-10, No Iterations 1
+Time = 3.895s
+
+smoothSolver:  Solving for T, Initial residual = 0.000292772, Final residual = 1.53514e-10, No Iterations 1
+Time = 3.9s
+
+smoothSolver:  Solving for T, Initial residual = 0.000292394, Final residual = 1.53324e-10, No Iterations 1
+Time = 3.905s
+
+smoothSolver:  Solving for T, Initial residual = 0.000292018, Final residual = 1.53135e-10, No Iterations 1
+Time = 3.91s
+
+smoothSolver:  Solving for T, Initial residual = 0.000291643, Final residual = 1.52946e-10, No Iterations 1
+Time = 3.915s
+
+smoothSolver:  Solving for T, Initial residual = 0.000291269, Final residual = 1.52758e-10, No Iterations 1
+Time = 3.92s
+
+smoothSolver:  Solving for T, Initial residual = 0.000290895, Final residual = 1.52571e-10, No Iterations 1
+Time = 3.925s
+
+smoothSolver:  Solving for T, Initial residual = 0.000290523, Final residual = 1.52384e-10, No Iterations 1
+Time = 3.93s
+
+smoothSolver:  Solving for T, Initial residual = 0.000290151, Final residual = 1.52197e-10, No Iterations 1
+Time = 3.935s
+
+smoothSolver:  Solving for T, Initial residual = 0.000289781, Final residual = 1.52012e-10, No Iterations 1
+Time = 3.94s
+
+smoothSolver:  Solving for T, Initial residual = 0.000289411, Final residual = 1.51826e-10, No Iterations 1
+Time = 3.945s
+
+smoothSolver:  Solving for T, Initial residual = 0.000289042, Final residual = 1.51642e-10, No Iterations 1
+Time = 3.95s
+
+smoothSolver:  Solving for T, Initial residual = 0.000288675, Final residual = 1.51458e-10, No Iterations 1
+Time = 3.955s
+
+smoothSolver:  Solving for T, Initial residual = 0.000288308, Final residual = 1.51274e-10, No Iterations 1
+Time = 3.96s
+
+smoothSolver:  Solving for T, Initial residual = 0.000287942, Final residual = 1.51091e-10, No Iterations 1
+Time = 3.965s
+
+smoothSolver:  Solving for T, Initial residual = 0.000287577, Final residual = 1.50909e-10, No Iterations 1
+Time = 3.97s
+
+smoothSolver:  Solving for T, Initial residual = 0.000287213, Final residual = 1.50727e-10, No Iterations 1
+Time = 3.975s
+
+smoothSolver:  Solving for T, Initial residual = 0.000286849, Final residual = 1.50546e-10, No Iterations 1
+Time = 3.98s
+
+smoothSolver:  Solving for T, Initial residual = 0.000286487, Final residual = 1.50365e-10, No Iterations 1
+Time = 3.985s
+
+smoothSolver:  Solving for T, Initial residual = 0.000286126, Final residual = 1.50185e-10, No Iterations 1
+Time = 3.99s
+
+smoothSolver:  Solving for T, Initial residual = 0.000285765, Final residual = 1.50005e-10, No Iterations 1
+Time = 3.995s
+
+smoothSolver:  Solving for T, Initial residual = 0.000285406, Final residual = 1.49826e-10, No Iterations 1
+Time = 4s
+
+smoothSolver:  Solving for T, Initial residual = 0.000285047, Final residual = 1.49647e-10, No Iterations 1
+Time = 4.005s
+
+smoothSolver:  Solving for T, Initial residual = 0.000284689, Final residual = 1.49469e-10, No Iterations 1
+Time = 4.01s
+
+smoothSolver:  Solving for T, Initial residual = 0.000284332, Final residual = 1.49292e-10, No Iterations 1
+Time = 4.015s
+
+smoothSolver:  Solving for T, Initial residual = 0.000283976, Final residual = 1.49115e-10, No Iterations 1
+Time = 4.02s
+
+smoothSolver:  Solving for T, Initial residual = 0.000283621, Final residual = 1.48938e-10, No Iterations 1
+Time = 4.025s
+
+smoothSolver:  Solving for T, Initial residual = 0.000283267, Final residual = 1.48762e-10, No Iterations 1
+Time = 4.03s
+
+smoothSolver:  Solving for T, Initial residual = 0.000282913, Final residual = 1.48587e-10, No Iterations 1
+Time = 4.035s
+
+smoothSolver:  Solving for T, Initial residual = 0.000282561, Final residual = 1.48412e-10, No Iterations 1
+Time = 4.04s
+
+smoothSolver:  Solving for T, Initial residual = 0.000282209, Final residual = 1.48237e-10, No Iterations 1
+Time = 4.045s
+
+smoothSolver:  Solving for T, Initial residual = 0.000281858, Final residual = 1.48063e-10, No Iterations 1
+Time = 4.05s
+
+smoothSolver:  Solving for T, Initial residual = 0.000281508, Final residual = 1.4789e-10, No Iterations 1
+Time = 4.055s
+
+smoothSolver:  Solving for T, Initial residual = 0.000281159, Final residual = 1.47717e-10, No Iterations 1
+Time = 4.06s
+
+smoothSolver:  Solving for T, Initial residual = 0.000280811, Final residual = 1.47545e-10, No Iterations 1
+Time = 4.065s
+
+smoothSolver:  Solving for T, Initial residual = 0.000280464, Final residual = 1.47373e-10, No Iterations 1
+Time = 4.07s
+
+smoothSolver:  Solving for T, Initial residual = 0.000280117, Final residual = 1.47202e-10, No Iterations 1
+Time = 4.075s
+
+smoothSolver:  Solving for T, Initial residual = 0.000279771, Final residual = 1.47031e-10, No Iterations 1
+Time = 4.08s
+
+smoothSolver:  Solving for T, Initial residual = 0.000279427, Final residual = 1.4686e-10, No Iterations 1
+Time = 4.085s
+
+smoothSolver:  Solving for T, Initial residual = 0.000279082, Final residual = 1.4669e-10, No Iterations 1
+Time = 4.09s
+
+smoothSolver:  Solving for T, Initial residual = 0.000278739, Final residual = 1.46521e-10, No Iterations 1
+Time = 4.095s
+
+smoothSolver:  Solving for T, Initial residual = 0.000278397, Final residual = 1.46352e-10, No Iterations 1
+Time = 4.1s
+
+smoothSolver:  Solving for T, Initial residual = 0.000278055, Final residual = 1.46184e-10, No Iterations 1
+Time = 4.105s
+
+smoothSolver:  Solving for T, Initial residual = 0.000277715, Final residual = 1.46016e-10, No Iterations 1
+Time = 4.11s
+
+smoothSolver:  Solving for T, Initial residual = 0.000277375, Final residual = 1.45849e-10, No Iterations 1
+Time = 4.115s
+
+smoothSolver:  Solving for T, Initial residual = 0.000277036, Final residual = 1.45682e-10, No Iterations 1
+Time = 4.12s
+
+smoothSolver:  Solving for T, Initial residual = 0.000276697, Final residual = 1.45515e-10, No Iterations 1
+Time = 4.125s
+
+smoothSolver:  Solving for T, Initial residual = 0.00027636, Final residual = 1.45349e-10, No Iterations 1
+Time = 4.13s
+
+smoothSolver:  Solving for T, Initial residual = 0.000276023, Final residual = 1.45184e-10, No Iterations 1
+Time = 4.135s
+
+smoothSolver:  Solving for T, Initial residual = 0.000275688, Final residual = 1.45019e-10, No Iterations 1
+Time = 4.14s
+
+smoothSolver:  Solving for T, Initial residual = 0.000275353, Final residual = 1.44854e-10, No Iterations 1
+Time = 4.145s
+
+smoothSolver:  Solving for T, Initial residual = 0.000275018, Final residual = 1.4469e-10, No Iterations 1
+Time = 4.15s
+
+smoothSolver:  Solving for T, Initial residual = 0.000274685, Final residual = 1.44527e-10, No Iterations 1
+Time = 4.155s
+
+smoothSolver:  Solving for T, Initial residual = 0.000274352, Final residual = 1.44364e-10, No Iterations 1
+Time = 4.16s
+
+smoothSolver:  Solving for T, Initial residual = 0.000274021, Final residual = 1.44201e-10, No Iterations 1
+Time = 4.165s
+
+smoothSolver:  Solving for T, Initial residual = 0.000273689, Final residual = 1.44039e-10, No Iterations 1
+Time = 4.17s
+
+smoothSolver:  Solving for T, Initial residual = 0.000273359, Final residual = 1.43877e-10, No Iterations 1
+Time = 4.175s
+
+smoothSolver:  Solving for T, Initial residual = 0.00027303, Final residual = 1.43716e-10, No Iterations 1
+Time = 4.18s
+
+smoothSolver:  Solving for T, Initial residual = 0.000272701, Final residual = 1.43555e-10, No Iterations 1
+Time = 4.185s
+
+smoothSolver:  Solving for T, Initial residual = 0.000272373, Final residual = 1.43395e-10, No Iterations 1
+Time = 4.19s
+
+smoothSolver:  Solving for T, Initial residual = 0.000272046, Final residual = 1.43235e-10, No Iterations 1
+Time = 4.195s
+
+smoothSolver:  Solving for T, Initial residual = 0.00027172, Final residual = 1.43076e-10, No Iterations 1
+Time = 4.2s
+
+smoothSolver:  Solving for T, Initial residual = 0.000271394, Final residual = 1.42917e-10, No Iterations 1
+Time = 4.205s
+
+smoothSolver:  Solving for T, Initial residual = 0.000271069, Final residual = 1.42758e-10, No Iterations 1
+Time = 4.21s
+
+smoothSolver:  Solving for T, Initial residual = 0.000270745, Final residual = 1.426e-10, No Iterations 1
+Time = 4.215s
+
+smoothSolver:  Solving for T, Initial residual = 0.000270422, Final residual = 1.42443e-10, No Iterations 1
+Time = 4.22s
+
+smoothSolver:  Solving for T, Initial residual = 0.000270099, Final residual = 1.42285e-10, No Iterations 1
+Time = 4.225s
+
+smoothSolver:  Solving for T, Initial residual = 0.000269778, Final residual = 1.42129e-10, No Iterations 1
+Time = 4.23s
+
+smoothSolver:  Solving for T, Initial residual = 0.000269457, Final residual = 1.41972e-10, No Iterations 1
+Time = 4.235s
+
+smoothSolver:  Solving for T, Initial residual = 0.000269136, Final residual = 1.41817e-10, No Iterations 1
+Time = 4.24s
+
+smoothSolver:  Solving for T, Initial residual = 0.000268817, Final residual = 1.41661e-10, No Iterations 1
+Time = 4.245s
+
+smoothSolver:  Solving for T, Initial residual = 0.000268498, Final residual = 1.41506e-10, No Iterations 1
+Time = 4.25s
+
+smoothSolver:  Solving for T, Initial residual = 0.00026818, Final residual = 1.41352e-10, No Iterations 1
+Time = 4.255s
+
+smoothSolver:  Solving for T, Initial residual = 0.000267863, Final residual = 1.41198e-10, No Iterations 1
+Time = 4.26s
+
+smoothSolver:  Solving for T, Initial residual = 0.000267546, Final residual = 1.41044e-10, No Iterations 1
+Time = 4.265s
+
+smoothSolver:  Solving for T, Initial residual = 0.00026723, Final residual = 1.40891e-10, No Iterations 1
+Time = 4.27s
+
+smoothSolver:  Solving for T, Initial residual = 0.000266915, Final residual = 1.40738e-10, No Iterations 1
+Time = 4.275s
+
+smoothSolver:  Solving for T, Initial residual = 0.000266601, Final residual = 1.40586e-10, No Iterations 1
+Time = 4.28s
+
+smoothSolver:  Solving for T, Initial residual = 0.000266287, Final residual = 1.40434e-10, No Iterations 1
+Time = 4.285s
+
+smoothSolver:  Solving for T, Initial residual = 0.000265974, Final residual = 1.40282e-10, No Iterations 1
+Time = 4.29s
+
+smoothSolver:  Solving for T, Initial residual = 0.000265662, Final residual = 1.40131e-10, No Iterations 1
+Time = 4.295s
+
+smoothSolver:  Solving for T, Initial residual = 0.000265351, Final residual = 1.3998e-10, No Iterations 1
+Time = 4.3s
+
+smoothSolver:  Solving for T, Initial residual = 0.00026504, Final residual = 1.3983e-10, No Iterations 1
+Time = 4.305s
+
+smoothSolver:  Solving for T, Initial residual = 0.00026473, Final residual = 1.3968e-10, No Iterations 1
+Time = 4.31s
+
+smoothSolver:  Solving for T, Initial residual = 0.00026442, Final residual = 1.39531e-10, No Iterations 1
+Time = 4.315s
+
+smoothSolver:  Solving for T, Initial residual = 0.000264112, Final residual = 1.39382e-10, No Iterations 1
+Time = 4.32s
+
+smoothSolver:  Solving for T, Initial residual = 0.000263804, Final residual = 1.39233e-10, No Iterations 1
+Time = 4.325s
+
+smoothSolver:  Solving for T, Initial residual = 0.000263497, Final residual = 1.39085e-10, No Iterations 1
+Time = 4.33s
+
+smoothSolver:  Solving for T, Initial residual = 0.00026319, Final residual = 1.38937e-10, No Iterations 1
+Time = 4.335s
+
+smoothSolver:  Solving for T, Initial residual = 0.000262884, Final residual = 1.3879e-10, No Iterations 1
+Time = 4.34s
+
+smoothSolver:  Solving for T, Initial residual = 0.000262579, Final residual = 1.38643e-10, No Iterations 1
+Time = 4.345s
+
+smoothSolver:  Solving for T, Initial residual = 0.000262275, Final residual = 1.38496e-10, No Iterations 1
+Time = 4.35s
+
+smoothSolver:  Solving for T, Initial residual = 0.000261971, Final residual = 1.3835e-10, No Iterations 1
+Time = 4.355s
+
+smoothSolver:  Solving for T, Initial residual = 0.000261668, Final residual = 1.38204e-10, No Iterations 1
+Time = 4.36s
+
+smoothSolver:  Solving for T, Initial residual = 0.000261366, Final residual = 1.38059e-10, No Iterations 1
+Time = 4.365s
+
+smoothSolver:  Solving for T, Initial residual = 0.000261064, Final residual = 1.37914e-10, No Iterations 1
+Time = 4.37s
+
+smoothSolver:  Solving for T, Initial residual = 0.000260763, Final residual = 1.37769e-10, No Iterations 1
+Time = 4.375s
+
+smoothSolver:  Solving for T, Initial residual = 0.000260463, Final residual = 1.37625e-10, No Iterations 1
+Time = 4.38s
+
+smoothSolver:  Solving for T, Initial residual = 0.000260163, Final residual = 1.37481e-10, No Iterations 1
+Time = 4.385s
+
+smoothSolver:  Solving for T, Initial residual = 0.000259864, Final residual = 1.37338e-10, No Iterations 1
+Time = 4.39s
+
+smoothSolver:  Solving for T, Initial residual = 0.000259566, Final residual = 1.37195e-10, No Iterations 1
+Time = 4.395s
+
+smoothSolver:  Solving for T, Initial residual = 0.000259268, Final residual = 1.37052e-10, No Iterations 1
+Time = 4.4s
+
+smoothSolver:  Solving for T, Initial residual = 0.000258971, Final residual = 1.3691e-10, No Iterations 1
+Time = 4.405s
+
+smoothSolver:  Solving for T, Initial residual = 0.000258675, Final residual = 1.36768e-10, No Iterations 1
+Time = 4.41s
+
+smoothSolver:  Solving for T, Initial residual = 0.00025838, Final residual = 1.36626e-10, No Iterations 1
+Time = 4.415s
+
+smoothSolver:  Solving for T, Initial residual = 0.000258085, Final residual = 1.36485e-10, No Iterations 1
+Time = 4.42s
+
+smoothSolver:  Solving for T, Initial residual = 0.00025779, Final residual = 1.36344e-10, No Iterations 1
+Time = 4.425s
+
+smoothSolver:  Solving for T, Initial residual = 0.000257497, Final residual = 1.36204e-10, No Iterations 1
+Time = 4.43s
+
+smoothSolver:  Solving for T, Initial residual = 0.000257204, Final residual = 1.36064e-10, No Iterations 1
+Time = 4.435s
+
+smoothSolver:  Solving for T, Initial residual = 0.000256911, Final residual = 1.35925e-10, No Iterations 1
+Time = 4.44s
+
+smoothSolver:  Solving for T, Initial residual = 0.00025662, Final residual = 1.35785e-10, No Iterations 1
+Time = 4.445s
+
+smoothSolver:  Solving for T, Initial residual = 0.000256329, Final residual = 1.35646e-10, No Iterations 1
+Time = 4.45s
+
+smoothSolver:  Solving for T, Initial residual = 0.000256038, Final residual = 1.35508e-10, No Iterations 1
+Time = 4.455s
+
+smoothSolver:  Solving for T, Initial residual = 0.000255749, Final residual = 1.3537e-10, No Iterations 1
+Time = 4.46s
+
+smoothSolver:  Solving for T, Initial residual = 0.00025546, Final residual = 1.35232e-10, No Iterations 1
+Time = 4.465s
+
+smoothSolver:  Solving for T, Initial residual = 0.000255171, Final residual = 1.35095e-10, No Iterations 1
+Time = 4.47s
+
+smoothSolver:  Solving for T, Initial residual = 0.000254883, Final residual = 1.34958e-10, No Iterations 1
+Time = 4.475s
+
+smoothSolver:  Solving for T, Initial residual = 0.000254596, Final residual = 1.34821e-10, No Iterations 1
+Time = 4.48s
+
+smoothSolver:  Solving for T, Initial residual = 0.00025431, Final residual = 1.34685e-10, No Iterations 1
+Time = 4.485s
+
+smoothSolver:  Solving for T, Initial residual = 0.000254024, Final residual = 1.34549e-10, No Iterations 1
+Time = 4.49s
+
+smoothSolver:  Solving for T, Initial residual = 0.000253738, Final residual = 1.34413e-10, No Iterations 1
+Time = 4.495s
+
+smoothSolver:  Solving for T, Initial residual = 0.000253454, Final residual = 1.34278e-10, No Iterations 1
+Time = 4.5s
+
+smoothSolver:  Solving for T, Initial residual = 0.00025317, Final residual = 1.34143e-10, No Iterations 1
+Time = 4.505s
+
+smoothSolver:  Solving for T, Initial residual = 0.000252886, Final residual = 1.34008e-10, No Iterations 1
+Time = 4.51s
+
+smoothSolver:  Solving for T, Initial residual = 0.000252603, Final residual = 1.33874e-10, No Iterations 1
+Time = 4.515s
+
+smoothSolver:  Solving for T, Initial residual = 0.000252321, Final residual = 1.3374e-10, No Iterations 1
+Time = 4.52s
+
+smoothSolver:  Solving for T, Initial residual = 0.00025204, Final residual = 1.33607e-10, No Iterations 1
+Time = 4.525s
+
+smoothSolver:  Solving for T, Initial residual = 0.000251759, Final residual = 1.33474e-10, No Iterations 1
+Time = 4.53s
+
+smoothSolver:  Solving for T, Initial residual = 0.000251478, Final residual = 1.33341e-10, No Iterations 1
+Time = 4.535s
+
+smoothSolver:  Solving for T, Initial residual = 0.000251199, Final residual = 1.33209e-10, No Iterations 1
+Time = 4.54s
+
+smoothSolver:  Solving for T, Initial residual = 0.00025092, Final residual = 1.33077e-10, No Iterations 1
+Time = 4.545s
+
+smoothSolver:  Solving for T, Initial residual = 0.000250641, Final residual = 1.32945e-10, No Iterations 1
+Time = 4.55s
+
+smoothSolver:  Solving for T, Initial residual = 0.000250363, Final residual = 1.32814e-10, No Iterations 1
+Time = 4.555s
+
+smoothSolver:  Solving for T, Initial residual = 0.000250086, Final residual = 1.32682e-10, No Iterations 1
+Time = 4.56s
+
+smoothSolver:  Solving for T, Initial residual = 0.000249809, Final residual = 1.32552e-10, No Iterations 1
+Time = 4.565s
+
+smoothSolver:  Solving for T, Initial residual = 0.000249533, Final residual = 1.32421e-10, No Iterations 1
+Time = 4.57s
+
+smoothSolver:  Solving for T, Initial residual = 0.000249258, Final residual = 1.32291e-10, No Iterations 1
+Time = 4.575s
+
+smoothSolver:  Solving for T, Initial residual = 0.000248983, Final residual = 1.32162e-10, No Iterations 1
+Time = 4.58s
+
+smoothSolver:  Solving for T, Initial residual = 0.000248708, Final residual = 1.32032e-10, No Iterations 1
+Time = 4.585s
+
+smoothSolver:  Solving for T, Initial residual = 0.000248435, Final residual = 1.31903e-10, No Iterations 1
+Time = 4.59s
+
+smoothSolver:  Solving for T, Initial residual = 0.000248162, Final residual = 1.31775e-10, No Iterations 1
+Time = 4.595s
+
+smoothSolver:  Solving for T, Initial residual = 0.000247889, Final residual = 1.31646e-10, No Iterations 1
+Time = 4.6s
+
+smoothSolver:  Solving for T, Initial residual = 0.000247617, Final residual = 1.31518e-10, No Iterations 1
+Time = 4.605s
+
+smoothSolver:  Solving for T, Initial residual = 0.000247346, Final residual = 1.31391e-10, No Iterations 1
+Time = 4.61s
+
+smoothSolver:  Solving for T, Initial residual = 0.000247075, Final residual = 1.31263e-10, No Iterations 1
+Time = 4.615s
+
+smoothSolver:  Solving for T, Initial residual = 0.000246805, Final residual = 1.31136e-10, No Iterations 1
+Time = 4.62s
+
+smoothSolver:  Solving for T, Initial residual = 0.000246535, Final residual = 1.31009e-10, No Iterations 1
+Time = 4.625s
+
+smoothSolver:  Solving for T, Initial residual = 0.000246266, Final residual = 1.30883e-10, No Iterations 1
+Time = 4.63s
+
+smoothSolver:  Solving for T, Initial residual = 0.000245997, Final residual = 1.30757e-10, No Iterations 1
+Time = 4.635s
+
+smoothSolver:  Solving for T, Initial residual = 0.000245729, Final residual = 1.30631e-10, No Iterations 1
+Time = 4.64s
+
+smoothSolver:  Solving for T, Initial residual = 0.000245462, Final residual = 1.30506e-10, No Iterations 1
+Time = 4.645s
+
+smoothSolver:  Solving for T, Initial residual = 0.000245195, Final residual = 1.30381e-10, No Iterations 1
+Time = 4.65s
+
+smoothSolver:  Solving for T, Initial residual = 0.000244929, Final residual = 1.30256e-10, No Iterations 1
+Time = 4.655s
+
+smoothSolver:  Solving for T, Initial residual = 0.000244663, Final residual = 1.30131e-10, No Iterations 1
+Time = 4.66s
+
+smoothSolver:  Solving for T, Initial residual = 0.000244398, Final residual = 1.30007e-10, No Iterations 1
+Time = 4.665s
+
+smoothSolver:  Solving for T, Initial residual = 0.000244134, Final residual = 1.29883e-10, No Iterations 1
+Time = 4.67s
+
+smoothSolver:  Solving for T, Initial residual = 0.00024387, Final residual = 1.2976e-10, No Iterations 1
+Time = 4.675s
+
+smoothSolver:  Solving for T, Initial residual = 0.000243606, Final residual = 1.29637e-10, No Iterations 1
+Time = 4.68s
+
+smoothSolver:  Solving for T, Initial residual = 0.000243344, Final residual = 1.29514e-10, No Iterations 1
+Time = 4.685s
+
+smoothSolver:  Solving for T, Initial residual = 0.000243081, Final residual = 1.29391e-10, No Iterations 1
+Time = 4.69s
+
+smoothSolver:  Solving for T, Initial residual = 0.000242819, Final residual = 1.29269e-10, No Iterations 1
+Time = 4.695s
+
+smoothSolver:  Solving for T, Initial residual = 0.000242558, Final residual = 1.29147e-10, No Iterations 1
+Time = 4.7s
+
+smoothSolver:  Solving for T, Initial residual = 0.000242298, Final residual = 1.29025e-10, No Iterations 1
+Time = 4.705s
+
+smoothSolver:  Solving for T, Initial residual = 0.000242037, Final residual = 1.28904e-10, No Iterations 1
+Time = 4.71s
+
+smoothSolver:  Solving for T, Initial residual = 0.000241778, Final residual = 1.28782e-10, No Iterations 1
+Time = 4.715s
+
+smoothSolver:  Solving for T, Initial residual = 0.000241519, Final residual = 1.28662e-10, No Iterations 1
+Time = 4.72s
+
+smoothSolver:  Solving for T, Initial residual = 0.00024126, Final residual = 1.28541e-10, No Iterations 1
+Time = 4.725s
+
+smoothSolver:  Solving for T, Initial residual = 0.000241002, Final residual = 1.28421e-10, No Iterations 1
+Time = 4.73s
+
+smoothSolver:  Solving for T, Initial residual = 0.000240745, Final residual = 1.28301e-10, No Iterations 1
+Time = 4.735s
+
+smoothSolver:  Solving for T, Initial residual = 0.000240488, Final residual = 1.28182e-10, No Iterations 1
+Time = 4.74s
+
+smoothSolver:  Solving for T, Initial residual = 0.000240232, Final residual = 1.28062e-10, No Iterations 1
+Time = 4.745s
+
+smoothSolver:  Solving for T, Initial residual = 0.000239976, Final residual = 1.27943e-10, No Iterations 1
+Time = 4.75s
+
+smoothSolver:  Solving for T, Initial residual = 0.00023972, Final residual = 1.27825e-10, No Iterations 1
+Time = 4.755s
+
+smoothSolver:  Solving for T, Initial residual = 0.000239466, Final residual = 1.27706e-10, No Iterations 1
+Time = 4.76s
+
+smoothSolver:  Solving for T, Initial residual = 0.000239211, Final residual = 1.27588e-10, No Iterations 1
+Time = 4.765s
+
+smoothSolver:  Solving for T, Initial residual = 0.000238958, Final residual = 1.2747e-10, No Iterations 1
+Time = 4.77s
+
+smoothSolver:  Solving for T, Initial residual = 0.000238704, Final residual = 1.27353e-10, No Iterations 1
+Time = 4.775s
+
+smoothSolver:  Solving for T, Initial residual = 0.000238452, Final residual = 1.27235e-10, No Iterations 1
+Time = 4.78s
+
+smoothSolver:  Solving for T, Initial residual = 0.0002382, Final residual = 1.27118e-10, No Iterations 1
+Time = 4.785s
+
+smoothSolver:  Solving for T, Initial residual = 0.000237948, Final residual = 1.27002e-10, No Iterations 1
+Time = 4.79s
+
+smoothSolver:  Solving for T, Initial residual = 0.000237697, Final residual = 1.26885e-10, No Iterations 1
+Time = 4.795s
+
+smoothSolver:  Solving for T, Initial residual = 0.000237446, Final residual = 1.26769e-10, No Iterations 1
+Time = 4.8s
+
+smoothSolver:  Solving for T, Initial residual = 0.000237196, Final residual = 1.26653e-10, No Iterations 1
+Time = 4.805s
+
+smoothSolver:  Solving for T, Initial residual = 0.000236946, Final residual = 1.26538e-10, No Iterations 1
+Time = 4.81s
+
+smoothSolver:  Solving for T, Initial residual = 0.000236697, Final residual = 1.26423e-10, No Iterations 1
+Time = 4.815s
+
+smoothSolver:  Solving for T, Initial residual = 0.000236449, Final residual = 1.26308e-10, No Iterations 1
+Time = 4.82s
+
+smoothSolver:  Solving for T, Initial residual = 0.000236201, Final residual = 1.26193e-10, No Iterations 1
+Time = 4.825s
+
+smoothSolver:  Solving for T, Initial residual = 0.000235953, Final residual = 1.26079e-10, No Iterations 1
+Time = 4.83s
+
+smoothSolver:  Solving for T, Initial residual = 0.000235706, Final residual = 1.25964e-10, No Iterations 1
+Time = 4.835s
+
+smoothSolver:  Solving for T, Initial residual = 0.00023546, Final residual = 1.25851e-10, No Iterations 1
+Time = 4.84s
+
+smoothSolver:  Solving for T, Initial residual = 0.000235214, Final residual = 1.25737e-10, No Iterations 1
+Time = 4.845s
+
+smoothSolver:  Solving for T, Initial residual = 0.000234968, Final residual = 1.25624e-10, No Iterations 1
+Time = 4.85s
+
+smoothSolver:  Solving for T, Initial residual = 0.000234723, Final residual = 1.25511e-10, No Iterations 1
+Time = 4.855s
+
+smoothSolver:  Solving for T, Initial residual = 0.000234478, Final residual = 1.25398e-10, No Iterations 1
+Time = 4.86s
+
+smoothSolver:  Solving for T, Initial residual = 0.000234234, Final residual = 1.25285e-10, No Iterations 1
+Time = 4.865s
+
+smoothSolver:  Solving for T, Initial residual = 0.000233991, Final residual = 1.25173e-10, No Iterations 1
+Time = 4.87s
+
+smoothSolver:  Solving for T, Initial residual = 0.000233748, Final residual = 1.25061e-10, No Iterations 1
+Time = 4.875s
+
+smoothSolver:  Solving for T, Initial residual = 0.000233505, Final residual = 1.24949e-10, No Iterations 1
+Time = 4.88s
+
+smoothSolver:  Solving for T, Initial residual = 0.000233263, Final residual = 1.24838e-10, No Iterations 1
+Time = 4.885s
+
+smoothSolver:  Solving for T, Initial residual = 0.000233021, Final residual = 1.24727e-10, No Iterations 1
+Time = 4.89s
+
+smoothSolver:  Solving for T, Initial residual = 0.00023278, Final residual = 1.24616e-10, No Iterations 1
+Time = 4.895s
+
+smoothSolver:  Solving for T, Initial residual = 0.00023254, Final residual = 1.24505e-10, No Iterations 1
+Time = 4.9s
+
+smoothSolver:  Solving for T, Initial residual = 0.000232299, Final residual = 1.24395e-10, No Iterations 1
+Time = 4.905s
+
+smoothSolver:  Solving for T, Initial residual = 0.00023206, Final residual = 1.24285e-10, No Iterations 1
+Time = 4.91s
+
+smoothSolver:  Solving for T, Initial residual = 0.000231821, Final residual = 1.24175e-10, No Iterations 1
+Time = 4.915s
+
+smoothSolver:  Solving for T, Initial residual = 0.000231582, Final residual = 1.24066e-10, No Iterations 1
+Time = 4.92s
+
+smoothSolver:  Solving for T, Initial residual = 0.000231344, Final residual = 1.23956e-10, No Iterations 1
+Time = 4.925s
+
+smoothSolver:  Solving for T, Initial residual = 0.000231106, Final residual = 1.23847e-10, No Iterations 1
+Time = 4.93s
+
+smoothSolver:  Solving for T, Initial residual = 0.000230868, Final residual = 1.23738e-10, No Iterations 1
+Time = 4.935s
+
+smoothSolver:  Solving for T, Initial residual = 0.000230632, Final residual = 1.2363e-10, No Iterations 1
+Time = 4.94s
+
+smoothSolver:  Solving for T, Initial residual = 0.000230395, Final residual = 1.23521e-10, No Iterations 1
+Time = 4.945s
+
+smoothSolver:  Solving for T, Initial residual = 0.000230159, Final residual = 1.23413e-10, No Iterations 1
+Time = 4.95s
+
+smoothSolver:  Solving for T, Initial residual = 0.000229924, Final residual = 1.23306e-10, No Iterations 1
+Time = 4.955s
+
+smoothSolver:  Solving for T, Initial residual = 0.000229689, Final residual = 1.23198e-10, No Iterations 1
+Time = 4.96s
+
+smoothSolver:  Solving for T, Initial residual = 0.000229455, Final residual = 1.23091e-10, No Iterations 1
+Time = 4.965s
+
+smoothSolver:  Solving for T, Initial residual = 0.000229221, Final residual = 1.22984e-10, No Iterations 1
+Time = 4.97s
+
+smoothSolver:  Solving for T, Initial residual = 0.000228987, Final residual = 1.22877e-10, No Iterations 1
+Time = 4.975s
+
+smoothSolver:  Solving for T, Initial residual = 0.000228754, Final residual = 1.22771e-10, No Iterations 1
+Time = 4.98s
+
+smoothSolver:  Solving for T, Initial residual = 0.000228521, Final residual = 1.22664e-10, No Iterations 1
+Time = 4.985s
+
+smoothSolver:  Solving for T, Initial residual = 0.000228289, Final residual = 1.22558e-10, No Iterations 1
+Time = 4.99s
+
+smoothSolver:  Solving for T, Initial residual = 0.000228057, Final residual = 1.22453e-10, No Iterations 1
+Time = 4.995s
+
+smoothSolver:  Solving for T, Initial residual = 0.000227826, Final residual = 1.22347e-10, No Iterations 1
+Time = 5s
+
+smoothSolver:  Solving for T, Initial residual = 0.000227595, Final residual = 1.22242e-10, No Iterations 1
+End
+
+[0;32m[13:36:57] Max concentration: 8.32715e-27 for pattern_13_center[0m

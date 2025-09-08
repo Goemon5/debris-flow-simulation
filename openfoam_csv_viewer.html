@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenFOAM CSV結果ビューア</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-area {
+            border: 3px dashed #4CAF50;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .upload-area:hover {
+            border-color: #45a049;
+            background: #e8f5e8;
+        }
+
+        .upload-area.dragover {
+            border-color: #2196F3;
+            background: #e3f2fd;
+            transform: scale(1.02);
+        }
+
+        #file-input {
+            display: none;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .control-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .control-button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .control-button.active {
+            background: #2196F3;
+        }
+
+        .plot-container {
+            height: 600px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background: white;
+        }
+
+        .data-info {
+            background: #e3f2fd;
+            border-left: 5px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .error {
+            background: #ffebee;
+            border-left: 5px solid #f44336;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            color: #c62828;
+        }
+
+        .success {
+            background: #e8f5e8;
+            border-left: 5px solid #4CAF50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            color: #2e7d32;
+        }
+
+        select, input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .parameter-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        label {
+            min-width: 100px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <div class="header">
+            <h1>🌪️ OpenFOAM CSV結果ビューア</h1>
+            <p>パターン1瓦礫シミュレーション結果の可視化</p>
+        </div>
+
+        <!-- ファイルアップロード -->
+        <div class="card">
+            <h2>📁 CSVデータ読み込み</h2>
+            <div class="upload-area" id="upload-area" onclick="document.getElementById('file-input').click()">
+                <input type="file" id="file-input" accept=".csv,.txt,.dat" onchange="handleFileUpload(event)">
+                <p>📤 CSVファイルをドラッグ&ドロップ<br>またはクリックして選択</p>
+                <small>対応ファイル: final_results.csv, sample_points_timeseries.csv</small>
+            </div>
+            <div id="file-status"></div>
+        </div>
+
+        <!-- コントロールパネル -->
+        <div class="card" id="control-panel" style="display:none;">
+            <h2>🎛️ 表示設定</h2>
+            
+            <div class="parameter-row">
+                <label>表示タイプ:</label>
+                <select id="plot-type" onchange="updatePlot()">
+                    <option value="3d-scatter">3D散布図（流速分布）</option>
+                    <option value="3d-velocity">3D流速ベクトル</option>
+                    <option value="pressure-contour">圧力分布</option>
+                    <option value="xy-slice">XY断面図</option>
+                    <option value="timeseries">時系列グラフ</option>
+                </select>
+            </div>
+
+            <div class="parameter-row">
+                <label>色分け:</label>
+                <select id="color-field" onchange="updatePlot()">
+                    <option value="velocity_magnitude">流速の大きさ</option>
+                    <option value="pressure">圧力</option>
+                    <option value="Ux">X方向流速</option>
+                    <option value="Uy">Y方向流速</option>
+                    <option value="Uz">Z方向流速</option>
+                </select>
+            </div>
+
+            <div class="parameter-row" id="slice-controls" style="display:none;">
+                <label>断面高さ:</label>
+                <input type="range" id="z-slice" min="0" max="5" step="0.1" value="1" onchange="updatePlot()">
+                <span id="z-value">1.0m</span>
+            </div>
+        </div>
+
+        <!-- 可視化エリア -->
+        <div class="card">
+            <h2>🎨 3D可視化</h2>
+            <div class="plot-container" id="main-plot"></div>
+        </div>
+
+        <!-- データ情報 -->
+        <div class="card" id="data-info" style="display:none;">
+            <h2>📊 データ統計</h2>
+            <div id="statistics"></div>
+        </div>
+    </div>
+
+    <script>
+        let csvData = null;
+        let dataType = null;
+
+        // ドラッグ&ドロップ機能
+        const uploadArea = document.getElementById('upload-area');
+        
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            uploadArea.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            uploadArea.addEventListener(eventName, highlight, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            uploadArea.addEventListener(eventName, unhighlight, false);
+        });
+
+        function highlight(e) {
+            uploadArea.classList.add('dragover');
+        }
+
+        function unhighlight(e) {
+            uploadArea.classList.remove('dragover');
+        }
+
+        uploadArea.addEventListener('drop', handleDrop, false);
+
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            document.getElementById('file-input').files = files;
+            handleFileUpload({target: {files: files}});
+        }
+
+        // ファイルアップロード処理
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const statusDiv = document.getElementById('file-status');
+            statusDiv.innerHTML = '<div class="data-info">📊 ファイル読み込み中...</div>';
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const content = e.target.result;
+                    parseCSVData(content, file.name);
+                    statusDiv.innerHTML = '<div class="success">✅ ファイル読み込み完了: ' + file.name + '</div>';
+                    
+                    // コントロールパネルを表示
+                    document.getElementById('control-panel').style.display = 'block';
+                    document.getElementById('data-info').style.display = 'block';
+                    
+                    updatePlot();
+                } catch (error) {
+                    statusDiv.innerHTML = '<div class="error">❌ ファイル読み込みエラー: ' + error.message + '</div>';
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // CSV解析
+        function parseCSVData(content, filename) {
+            const lines = content.trim().split('\n');
+            const headers = lines[0].split(',').map(h => h.trim());
+            
+            csvData = [];
+            for (let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(',');
+                if (values.length === headers.length) {
+                    const row = {};
+                    headers.forEach((header, index) => {
+                        const value = values[index].trim();
+                        row[header] = isNaN(value) ? value : parseFloat(value);
+                    });
+                    csvData.push(row);
+                }
+            }
+
+            // データタイプを判定
+            if (headers.includes('time') && headers.includes('point_name')) {
+                dataType = 'timeseries';
+            } else if (headers.includes('x') && headers.includes('y') && headers.includes('z')) {
+                dataType = 'spatial';
+            } else {
+                throw new Error('未対応のデータ形式です');
+            }
+
+            console.log(`データ読み込み完了: ${csvData.length}行, タイプ: ${dataType}`);
+            
+            // 統計情報表示
+            displayStatistics(headers);
+        }
+
+        // 統計情報表示
+        function displayStatistics(headers) {
+            const statsDiv = document.getElementById('statistics');
+            let html = `<p><strong>データ数:</strong> ${csvData.length}行</p>`;
+            html += `<p><strong>列:</strong> ${headers.join(', ')}</p>`;
+            
+            // 数値列の統計
+            const numericFields = ['x', 'y', 'z', 'Ux', 'Uy', 'Uz', 'velocity_magnitude', 'pressure'];
+            
+            numericFields.forEach(field => {
+                if (headers.includes(field)) {
+                    const values = csvData.map(row => row[field]).filter(v => !isNaN(v));
+                    if (values.length > 0) {
+                        const min = Math.min(...values);
+                        const max = Math.max(...values);
+                        const avg = values.reduce((a, b) => a + b, 0) / values.length;
+                        html += `<p><strong>${field}:</strong> ${min.toFixed(4)} ～ ${max.toFixed(4)} (平均: ${avg.toFixed(4)})</p>`;
+                    }
+                }
+            });
+            
+            statsDiv.innerHTML = html;
+        }
+
+        // プロット更新
+        function updatePlot() {
+            if (!csvData) return;
+
+            const plotType = document.getElementById('plot-type').value;
+            const colorField = document.getElementById('color-field').value;
+            
+            // 断面制御の表示/非表示
+            document.getElementById('slice-controls').style.display = 
+                plotType === 'xy-slice' ? 'block' : 'none';
+
+            switch (plotType) {
+                case '3d-scatter':
+                    plot3DScatter(colorField);
+                    break;
+                case '3d-velocity':
+                    plot3DVelocity();
+                    break;
+                case 'pressure-contour':
+                    plotPressureContour();
+                    break;
+                case 'xy-slice':
+                    plotXYSlice();
+                    break;
+                case 'timeseries':
+                    plotTimeSeries();
+                    break;
+            }
+        }
+
+        // 3D散布図
+        function plot3DScatter(colorField) {
+            if (dataType !== 'spatial') return;
+
+            const trace = {
+                x: csvData.map(row => row.x),
+                y: csvData.map(row => row.y),
+                z: csvData.map(row => row.z),
+                mode: 'markers',
+                type: 'scatter3d',
+                marker: {
+                    size: 3,
+                    color: csvData.map(row => row[colorField]),
+                    colorscale: 'Viridis',
+                    colorbar: { title: colorField },
+                    showscale: true
+                },
+                text: csvData.map(row => 
+                    `位置: (${row.x.toFixed(2)}, ${row.y.toFixed(2)}, ${row.z.toFixed(2)})<br>` +
+                    `流速: ${row.velocity_magnitude.toFixed(3)} m/s<br>` +
+                    `圧力: ${row.pressure.toFixed(6)} Pa`
+                ),
+                hovertemplate: '%{text}<extra></extra>'
+            };
+
+            const layout = {
+                title: `3D流体場分布 - ${colorField}`,
+                scene: {
+                    xaxis: { title: 'X (m)' },
+                    yaxis: { title: 'Y (m)' },
+                    zaxis: { title: 'Z (m)' },
+                    aspectmode: 'cube'
+                },
+                margin: { l: 0, r: 0, b: 0, t: 40 }
+            };
+
+            Plotly.newPlot('main-plot', [trace], layout, {responsive: true});
+        }
+
+        // 3D流速ベクトル
+        function plot3DVelocity() {
+            if (dataType !== 'spatial') return;
+
+            // データをサブサンプリング（重すぎるため）
+            const step = Math.max(1, Math.floor(csvData.length / 1000));
+            const sampledData = csvData.filter((_, i) => i % step === 0);
+
+            const trace = {
+                x: sampledData.map(row => row.x),
+                y: sampledData.map(row => row.y),
+                z: sampledData.map(row => row.z),
+                u: sampledData.map(row => row.Ux * 10), // スケール調整
+                v: sampledData.map(row => row.Uy * 10),
+                w: sampledData.map(row => row.Uz * 10),
+                type: 'cone',
+                colorscale: 'Viridis',
+                colorbar: { title: '流速 (m/s)' }
+            };
+
+            const layout = {
+                title: '3D流速ベクトル場',
+                scene: {
+                    xaxis: { title: 'X (m)' },
+                    yaxis: { title: 'Y (m)' },
+                    zaxis: { title: 'Z (m)' }
+                },
+                margin: { l: 0, r: 0, b: 0, t: 40 }
+            };
+
+            Plotly.newPlot('main-plot', [trace], layout, {responsive: true});
+        }
+
+        // 圧力分布
+        function plotPressureContour() {
+            if (dataType !== 'spatial') return;
+
+            // Z=1mでの断面データを抽出
+            const sliceData = csvData.filter(row => Math.abs(row.z - 1.0) < 0.1);
+            
+            const trace = {
+                x: sliceData.map(row => row.x),
+                y: sliceData.map(row => row.y),
+                z: sliceData.map(row => row.pressure),
+                type: 'scatter',
+                mode: 'markers',
+                marker: {
+                    size: 8,
+                    color: sliceData.map(row => row.pressure),
+                    colorscale: 'RdYlBu',
+                    colorbar: { title: '圧力 (Pa)' },
+                    showscale: true
+                }
+            };
+
+            const layout = {
+                title: '圧力分布 (Z=1m断面)',
+                xaxis: { title: 'X (m)' },
+                yaxis: { title: 'Y (m)' }
+            };
+
+            Plotly.newPlot('main-plot', [trace], layout, {responsive: true});
+        }
+
+        // XY断面図
+        function plotXYSlice() {
+            const zSlice = parseFloat(document.getElementById('z-slice').value);
+            document.getElementById('z-value').textContent = zSlice.toFixed(1) + 'm';
+            
+            if (dataType !== 'spatial') return;
+
+            const tolerance = 0.2;
+            const sliceData = csvData.filter(row => Math.abs(row.z - zSlice) < tolerance);
+            
+            if (sliceData.length === 0) return;
+
+            const trace = {
+                x: sliceData.map(row => row.x),
+                y: sliceData.map(row => row.y),
+                z: sliceData.map(row => row.velocity_magnitude),
+                type: 'scatter',
+                mode: 'markers',
+                marker: {
+                    size: 6,
+                    color: sliceData.map(row => row.velocity_magnitude),
+                    colorscale: 'Jet',
+                    colorbar: { title: '流速 (m/s)' },
+                    showscale: true
+                }
+            };
+
+            const layout = {
+                title: `XY断面での流速分布 (Z=${zSlice.toFixed(1)}m)`,
+                xaxis: { title: 'X (m)' },
+                yaxis: { title: 'Y (m)' }
+            };
+
+            Plotly.newPlot('main-plot', [trace], layout, {responsive: true});
+        }
+
+        // 時系列グラフ
+        function plotTimeSeries() {
+            if (dataType !== 'timeseries') return;
+
+            const points = [...new Set(csvData.map(row => row.point_name))];
+            const traces = [];
+
+            points.forEach(point => {
+                const pointData = csvData.filter(row => row.point_name === point);
+                traces.push({
+                    x: pointData.map(row => row.time),
+                    y: pointData.map(row => row.velocity_magnitude),
+                    mode: 'lines+markers',
+                    name: point,
+                    type: 'scatter'
+                });
+            });
+
+            const layout = {
+                title: '各点での流速時間発展',
+                xaxis: { title: '時間 (s)' },
+                yaxis: { title: '流速 (m/s)' },
+                showlegend: true
+            };
+
+            Plotly.newPlot('main-plot', traces, layout, {responsive: true});
+        }
+
+        // 初期プロット（デモデータ）
+        function initializeDemoPlot() {
+            const x = [], y = [], z = [], vel = [];
+            
+            for (let i = 0; i < 15; i += 0.5) {
+                for (let j = 0; j < 15; j += 0.5) {
+                    for (let k = 0; k < 5; k += 0.5) {
+                        x.push(i);
+                        y.push(j);
+                        z.push(k);
+                        vel.push(0.5 * (1 - i/15) * Math.exp(-((i-7.5)**2 + (j-7.5)**2)/20));
+                    }
+                }
+            }
+
+            const trace = {
+                x: x, y: y, z: z,
+                mode: 'markers',
+                type: 'scatter3d',
+                marker: {
+                    size: 2,
+                    color: vel,
+                    colorscale: 'Viridis',
+                    colorbar: { title: '流速 (m/s)' }
+                }
+            };
+
+            const layout = {
+                title: 'デモ: 3D流体場（CSVファイルを読み込んでください）',
+                scene: {
+                    xaxis: { title: 'X (m)' },
+                    yaxis: { title: 'Y (m)' },
+                    zaxis: { title: 'Z (m)' }
+                }
+            };
+
+            Plotly.newPlot('main-plot', [trace], layout, {responsive: true});
+        }
+
+        // 初期化
+        window.onload = function() {
+            initializeDemoPlot();
+        };
+    </script>
+</body>
+</html>

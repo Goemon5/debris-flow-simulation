@@ -29,6 +29,7 @@ def read_openfoam_field(filepath, field_type='scalar'):
 
 def read_mesh_points(case_dir):
     """メッシュポイントを読み込む"""
+    
     points_file = os.path.join(case_dir, "constant/polyMesh/points")
     if not os.path.exists(points_file):
         return None

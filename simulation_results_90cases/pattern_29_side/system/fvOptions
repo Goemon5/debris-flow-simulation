@@ -1,0 +1,43 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \    /   O peration     | Website:  https://openfoam.org
+    \  /    A nd           | Version:  10
+     \/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvOptions;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+scent_source_side
+{
+    type            semiImplicitSource;
+    active          yes;
+
+    semiImplicitSourceCoeffs
+    {
+        selectionMode   points;
+        points          
+        (
+            (7.5 5.0 1.5)
+        );
+        
+        volumeMode      absolute;
+        
+        sources
+        {
+            T
+            {
+                explicit    1e5;    // Source term value (kg/m3/s)
+                implicit    0;      // No implicit part
+            }
+        }
+    }
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

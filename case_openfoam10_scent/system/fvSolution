@@ -1,0 +1,35 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \    /   O peration     | Website:  https://openfoam.org
+    \  /    A nd           | Version:  10
+     \/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Solver settings for scalar T (scalarTransportFoam in OpenFOAM 10)
+solvers
+{
+    T
+    {
+        solver          smoothSolver;       // Robust iterative solver
+        smoother        symGaussSeidel;     // Stable smoother
+        tolerance       1e-06;              // Reasonable convergence criterion
+        relTol          0.1;                // Allow some relative tolerance for stability
+        maxIter         100;                // Prevent excessive iterations
+    }
+}
+
+SIMPLE
+{
+    nNonOrthogonalCorrectors 0;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

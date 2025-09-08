@@ -1,0 +1,50 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \    /   O peration     | Website:  https://openfoam.org
+    \  /    A nd           | Version:  10
+     \/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Conservative, stable numerical schemes for scalarTransportFoam
+ddtSchemes
+{
+    default         Euler;          // First-order implicit, very stable
+}
+
+gradSchemes
+{
+    default         Gauss linear;   // Standard linear gradient
+}
+
+divSchemes
+{
+    default         Gauss linear;   // Most stable convection scheme
+    div(phi,T)      Gauss upwind;   // Upwind for scalar transport (very stable)
+}
+
+laplacianSchemes
+{
+    default         Gauss linear corrected;  // Standard diffusion scheme
+    laplacian(DT,T) Gauss linear corrected;  // Diffusion for scalar T
+}
+
+interpolationSchemes
+{
+    default         linear;         // Linear interpolation
+}
+
+snGradSchemes
+{
+    default         corrected;      // Standard surface normal gradient
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
