@@ -1,0 +1,12 @@
+Pattern Test Results - 2025年 10月14日 火曜日 13時34分04秒 JST
+========================================
+Pattern 10 - Start: 2025年 10月14日 火曜日 13時34分04秒 JST
+Pattern 10 - ERROR: blockMesh failed
+Pattern 25 - Start: 2025年 10月14日 火曜日 13時34分07秒 JST
+Pattern 25 - ERROR: blockMesh failed
+Pattern 40 - Start: 2025年 10月14日 火曜日 13時34分09秒 JST
+Pattern 40 - ERROR: blockMesh failed
+Pattern 65 - Start: 2025年 10月14日 火曜日 13時34分11秒 JST
+Pattern 65 - ERROR: blockMesh failed
+Pattern 80 - Start: 2025年 10月14日 火曜日 13時34分13秒 JST
+Pattern 80 - ERROR: blockMesh failed

@@ -1,0 +1,195 @@
+{
+  "pattern_analysis": {
+    "processed_npy": {
+      "error": "processed_data\u304c\u5b58\u5728\u3057\u307e\u305b\u3093"
+    },
+    "openfoam_raw": {
+      "pattern_02_center": {
+        "data_type": "openfoam",
+        "shape": [
+          96305,
+          3
+        ],
+        "components": {
+          "Vx": {
+            "min": -0.0672154,
+            "max": 0.146344,
+            "mean": 0.058812738894225634,
+            "std": 0.05299549652523928,
+            "range": 0.2135594
+          },
+          "Vy": {
+            "min": -0.139742,
+            "max": 0.140506,
+            "mean": -0.0001350360421516921,
+            "std": 0.028395863073997135,
+            "range": 0.280248
+          },
+          "Vz": {
+            "min": -0.0685528,
+            "max": 0.115757,
+            "mean": 0.005088363476514908,
+            "std": 0.017287461376603367,
+            "range": 0.1843098
+          }
+        },
+        "magnitude": {
+          "min": 0.000390297577208176,
+          "max": 0.1517189773390264,
+          "mean": 0.07513572030853553,
+          "std": 0.04187093837115534
+        },
+        "data_hash": "0336c9a929d7bdf7"
+      },
+      "pattern_01_side": {
+        "data_type": "openfoam",
+        "shape": [
+          96305,
+          3
+        ],
+        "components": {
+          "Vx": {
+            "min": -0.0672154,
+            "max": 0.146344,
+            "mean": 0.058812738894225634,
+            "std": 0.05299549652523928,
+            "range": 0.2135594
+          },
+          "Vy": {
+            "min": -0.139742,
+            "max": 0.140506,
+            "mean": -0.0001350360421516921,
+            "std": 0.028395863073997135,
+            "range": 0.280248
+          },
+          "Vz": {
+            "min": -0.0685528,
+            "max": 0.115757,
+            "mean": 0.005088363476514908,
+            "std": 0.017287461376603367,
+            "range": 0.1843098
+          }
+        },
+        "magnitude": {
+          "min": 0.000390297577208176,
+          "max": 0.1517189773390264,
+          "mean": 0.07513572030853553,
+          "std": 0.04187093837115534
+        },
+        "data_hash": "0336c9a929d7bdf7"
+      },
+      "pattern_01_center": {
+        "data_type": "openfoam",
+        "shape": [
+          96305,
+          3
+        ],
+        "components": {
+          "Vx": {
+            "min": -0.0672154,
+            "max": 0.146344,
+            "mean": 0.058812738894225634,
+            "std": 0.05299549652523928,
+            "range": 0.2135594
+          },
+          "Vy": {
+            "min": -0.139742,
+            "max": 0.140506,
+            "mean": -0.0001350360421516921,
+            "std": 0.028395863073997135,
+            "range": 0.280248
+          },
+          "Vz": {
+            "min": -0.0685528,
+            "max": 0.115757,
+            "mean": 0.005088363476514908,
+            "std": 0.017287461376603367,
+            "range": 0.1843098
+          }
+        },
+        "magnitude": {
+          "min": 0.000390297577208176,
+          "max": 0.1517189773390264,
+          "mean": 0.07513572030853553,
+          "std": 0.04187093837115534
+        },
+        "data_hash": "0336c9a929d7bdf7"
+      },
+      "pattern_01_upwind": {
+        "data_type": "openfoam",
+        "shape": [
+          96305,
+          3
+        ],
+        "components": {
+          "Vx": {
+            "min": -0.0672154,
+            "max": 0.146344,
+            "mean": 0.058812738894225634,
+            "std": 0.05299549652523928,
+            "range": 0.2135594
+          },
+          "Vy": {
+            "min": -0.139742,
+            "max": 0.140506,
+            "mean": -0.0001350360421516921,
+            "std": 0.028395863073997135,
+            "range": 0.280248
+          },
+          "Vz": {
+            "min": -0.0685528,
+            "max": 0.115757,
+            "mean": 0.005088363476514908,
+            "std": 0.017287461376603367,
+            "range": 0.1843098
+          }
+        },
+        "magnitude": {
+          "min": 0.000390297577208176,
+          "max": 0.1517189773390264,
+          "mean": 0.07513572030853553,
+          "std": 0.04187093837115534
+        },
+        "data_hash": "0336c9a929d7bdf7"
+      }
+    }
+  },
+  "duplicate_detection": {
+    "npy_duplicates": [],
+    "openfoam_duplicates": [
+      {
+        "hash": "0336c9a929d7bdf750eed4ab871712ba",
+        "patterns": [
+          "pattern_02_center",
+          "pattern_01_side"
+        ]
+      },
+      {
+        "hash": "0336c9a929d7bdf750eed4ab871712ba",
+        "patterns": [
+          "pattern_02_center",
+          "pattern_01_center"
+        ]
+      },
+      {
+        "hash": "0336c9a929d7bdf750eed4ab871712ba",
+        "patterns": [
+          "pattern_02_center",
+          "pattern_01_upwind"
+        ]
+      }
+    ],
+    "cross_source_comparison": {}
+  },
+  "diversity_metrics": {
+    "velocity_range_diversity": {},
+    "statistical_diversity": {},
+    "effective_patterns": 0
+  },
+  "recommendations": [
+    "OpenFOAM\u30673\u7d44\u306e\u91cd\u8907\u30d1\u30bf\u30fc\u30f3\u3092\u691c\u51fa\u3002\u5883\u754c\u6761\u4ef6\u8a2d\u5b9a\u3092\u898b\u76f4\u3057",
+    "\u6709\u52b9\u306a\u30d1\u30bf\u30fc\u30f3\u6570\u304c\u5c11\u306a\u3059\u304e\u307e\u3059\u3002\u3088\u308a\u591a\u69d8\u306a\u74e6\u792b\u914d\u7f6e\u3092\u751f\u6210\u3057\u3066\u304f\u3060\u3055\u3044",
+    "Y\u65b9\u5411\u901f\u5ea6\u306e\u591a\u69d8\u6027\u304c\u4e0d\u8db3\u3002\u7570\u306a\u308b\u98a8\u5411\u304d\u3084\u5883\u754c\u6761\u4ef6\u3092\u8ffd\u52a0",
+    "Z\u65b9\u5411\u901f\u5ea6\u306e\u591a\u69d8\u6027\u304c\u4e0d\u8db3\u30023\u6b21\u5143\u7684\u306a\u6d41\u308c\u30d1\u30bf\u30fc\u30f3\u3092\u5897\u3084\u3059"
+  ]
+}

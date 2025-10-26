@@ -1,0 +1,13 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      physicalProperties;
+}
+
+// Kinematic viscosity for air at room temperature
+nu              nu [0 2 -1 0 0 0 0] 1.5e-05;
+
+// Thermal diffusivity (from original scalarTransportFoam)
+DT              DT [0 2 -1 0 0 0 0] 2e-05;
